@@ -1,0 +1,915 @@
+{
+	// 1. 生成elf*3 2. 生成gen.S*3 3.再次生成elf*3
+    "tasks": [
+        /////////////////   arm rootboot  //////////////////////
+        {
+            "type": "shell",
+            "label": "mkdir_arm_rootboot",
+            "command": "mkdir",
+            "args": ["-Force",
+                    "./ARM/rootboot/build"]
+        },
+        {
+            "type": "shell",
+            "label": "rm_build_arm_rootboot",
+            "command": "Remove-Item",
+            "args": ["-Path",
+                     "./ARM/rootboot/build",
+                     "-Recurse"],
+            "dependsOn": [
+                "mkdir_arm_rootboot"
+            ]
+        },
+        {
+            "type": "shell", 
+            "label": "mk_build_arm_rootboot",
+            "command": "mkdir",
+            "args": ["./ARM/rootboot/build"],
+            "dependsOn": [
+                "rm_build_arm_rootboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "cmake_arm_rootboot",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-G",
+                "MinGW Makefiles",
+                "${workspaceFolder}/ARM/rootboot"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/ARM/rootboot/build",
+            },
+            "dependsOn": [
+                "mk_build_arm_rootboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "make_arm_rootboot",
+            "command": "mingw32-make",
+            "args": ["-j8",
+                     "V=1"],
+            // "args": ["V=1"],
+            "options": {
+                "cwd": "${workspaceFolder}/ARM/rootboot/build",
+            },
+            "dependsOn": [
+                "cmake_arm_rootboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_arm_rootboot",
+            "command": "cp",
+            "args": ["./ARM/rootboot/build/arm_rootboot.*",
+                     "../output"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "make_arm_rootboot" // 这里设置，说明了这个任务一定要在Task “cmake”执行之后方可执行
+            ]
+        },
+        /////////////////   arm funcboot  //////////////////////
+        {
+            "type": "shell",
+            "label": "mkdir_arm_funcboot",
+            "command": "mkdir",
+            "args": ["-Force",
+                    "./ARM/funcboot/build"]
+        },
+        {
+            "type": "shell",
+            "label": "rm_build_arm_funcboot",
+            "command": "Remove-Item",
+            "args": ["-Path",
+                     "./ARM/funcboot/build",
+                     "-Recurse"],
+            "dependsOn": [
+                "mkdir_arm_funcboot"
+            ]
+        },
+        {
+            "type": "shell", 
+            "label": "mk_build_arm_funcboot",
+            "command": "mkdir",
+            "args": ["./ARM/funcboot/build"],
+            "dependsOn": [
+                "rm_build_arm_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "cmake_arm_funcboot",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-G",
+                "MinGW Makefiles",
+                "${workspaceFolder}/ARM/funcboot"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/ARM/funcboot/build",
+            },
+            "dependsOn": [
+                "mk_build_arm_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "make_arm_funcboot",
+            "command": "mingw32-make",
+            "args": ["-j8",
+                     "V=1"],
+            // "args": ["V=1"],
+            "options": {
+                "cwd": "${workspaceFolder}/ARM/funcboot/build",
+            },
+            "dependsOn": [
+                "cmake_arm_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_arm_funcboot",
+            "command": "cp",
+            "args": ["./ARM/funcboot/build/arm_funcboot.*",
+                     "../output"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "make_arm_funcboot" // 这里设置，说明了这个任务一定要在Task “cmake”执行之后方可执行
+            ]
+        },
+        /////////////////   arm app  //////////////////////
+        {
+            "type": "shell",
+            "label": "arm_bk_gen",
+            "command": "cp",
+            "args": ["./ARM/src/label.S",
+                     "./ARM/src/gen.S"],
+            "options": {
+                "cwd": "${workspaceFolder}",
+            }
+        },
+        {
+            "type": "shell",
+            "label": "mkdir_arm_app",
+            "command": "mkdir",
+            "args": ["-Force",
+                    "./ARM/app/build"]
+        },
+        {
+            "type": "shell",
+            "label": "rm_build_arm_app",
+            "command": "Remove-Item",
+            "args": ["-Path",
+                     "./ARM/app/build",
+                     "-Recurse"],
+            "dependsOn": [
+                "mkdir_arm_app"
+            ]
+        },
+        {
+            "type": "shell", 
+            "label": "mk_build_arm_app",
+            "command": "mkdir",
+            "args": ["./ARM/app/build"],
+            "dependsOn": [
+                "rm_build_arm_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "cmake_arm_app",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-G",
+                "MinGW Makefiles",
+                "${workspaceFolder}/ARM/app"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/ARM/app/build",
+            },
+            "dependsOn": [
+                "mk_build_arm_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "only_make_arm_app",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "mingw32-make",
+            "args": ["-j8",
+                     "V=1"],
+            // "args": ["V=1"],
+            "options": {
+                "cwd": "${workspaceFolder}/ARM/app/build",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "cmake_arm_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "only_gen_arm_label",
+            "command": "python3",
+            "args": ["common/tools/gen_label_map_arm.py"],
+            "options": {
+                "cwd": "${workspaceFolder}",
+            }
+        },
+        {
+            "type": "shell",
+            "label": "make_arm_app",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "arm_bk_gen",
+                "only_make_arm_app",
+                "only_gen_arm_label",
+                "only_make_arm_app",
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_arm_app",
+            "command": "cp",
+            "args": ["./ARM/app/build/arm_app.*",
+                     "../output"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "make_arm_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_arm_all",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "parallel",
+            "dependsOn": [
+                // "build_arm_rootboot",
+                // "build_arm_funcboot",
+                "build_arm_app"
+            ]
+        },
+        /////////////////   mips rootboot  //////////////////////
+        {
+            "type": "shell",
+            "label": "mkdir_mips_rootboot",
+            "command": "mkdir",
+            "args": ["-Force",
+                    "./MIPS/rootboot/build"]
+        },
+        {
+            "type": "shell",
+            "label": "rm_build_mips_rootboot",
+            "command": "Remove-Item",
+            "args": ["-Path",
+                     "./MIPS/rootboot/build",
+                     "-Recurse"],
+            "dependsOn": [
+                "mkdir_mips_rootboot"
+            ]
+        },
+        {
+            "type": "shell", 
+            "label": "mk_build_mips_rootboot",
+            "command": "mkdir",
+            "args": ["./MIPS/rootboot/build"],
+            "dependsOn": [
+                "rm_build_mips_rootboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "cmake_mips_rootboot",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-G",
+                "MinGW Makefiles",
+                "${workspaceFolder}/MIPS/rootboot"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/MIPS/rootboot/build",
+            },
+            "dependsOn": [
+                "mk_build_mips_rootboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "make_mips_rootboot",
+            "command": "mingw32-make",
+            "args": ["-j8",
+                     "V=1"],
+            // "args": ["V=1"],
+            "options": {
+                "cwd": "${workspaceFolder}/MIPS/rootboot/build",
+            },
+            "dependsOn": [
+                "cmake_mips_rootboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_mips_rootboot",
+            "command": "cp",
+            "args": ["./MIPS/rootboot/build/mips_rootboot.*",
+                     "../output"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "make_mips_rootboot" // 这里设置，说明了这个任务一定要在Task “cmake”执行之后方可执行
+            ]
+        },
+        /////////////////   mips funcboot  //////////////////////
+        {
+            "type": "shell",
+            "label": "mkdir_mips_funcboot",
+            "command": "mkdir",
+            "args": ["-Force",
+                    "./MIPS/funcboot/build"]
+        },
+        {
+            "type": "shell",
+            "label": "rm_build_mips_funcboot",
+            "command": "Remove-Item",
+            "args": ["-Path",
+                     "./MIPS/funcboot/build",
+                     "-Recurse"],
+            "dependsOn": [
+                "mkdir_mips_funcboot"
+            ]
+        },
+        {
+            "type": "shell", 
+            "label": "mk_build_mips_funcboot",
+            "command": "mkdir",
+            "args": ["./MIPS/funcboot/build"],
+            "dependsOn": [
+                "rm_build_mips_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "cmake_mips_funcboot",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-G",
+                "MinGW Makefiles",
+                "${workspaceFolder}/MIPS/funcboot"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/MIPS/funcboot/build",
+            },
+            "dependsOn": [
+                "mk_build_mips_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "make_mips_funcboot",
+            "command": "mingw32-make",
+            "args": ["-j8",
+                     "V=1"],
+            // "args": ["V=1"],
+            "options": {
+                "cwd": "${workspaceFolder}/MIPS/funcboot/build",
+            },
+            "dependsOn": [
+                "cmake_mips_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_mips_funcboot",
+            "command": "cp",
+            "args": ["./MIPS/funcboot/build/mips_funcboot.*",
+                     "../output"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "make_mips_funcboot" // 这里设置，说明了这个任务一定要在Task “cmake”执行之后方可执行
+            ]
+        },
+        /////////////////   mips app  //////////////////////
+        {
+            "type": "shell",
+            "label": "mips_bk_gen",
+            "command": "cp",
+            "args": ["./MIPS/src/label.S",
+                     "./MIPS/src/gen.S"],
+            "options": {
+                "cwd": "${workspaceFolder}",
+            }
+        },
+        {
+            "type": "shell",
+            "label": "mkdir_mips_app",
+            "command": "mkdir",
+            "args": ["-Force",
+                    "./MIPS/app/build"]
+        },
+        {
+            "type": "shell",
+            "label": "rm_build_mips_app",
+            "command": "Remove-Item",
+            "args": ["-Path",
+                     "./MIPS/app/build",
+                     "-Recurse"],
+            "dependsOn": [
+                "mkdir_mips_app"
+            ]
+        },
+        {
+            "type": "shell", 
+            "label": "mk_build_mips_app",
+            "command": "mkdir",
+            "args": ["./MIPS/app/build"],
+            "dependsOn": [
+                "rm_build_mips_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "cmake_mips_app",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-G",
+                "MinGW Makefiles",
+                "${workspaceFolder}/MIPS/app"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/MIPS/app/build",
+            },
+            "dependsOn": [
+                "mk_build_mips_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "only_make_mips_app",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "mingw32-make",
+            "args": ["-j8",
+                     "V=1"],
+            // "args": ["V=1"],
+            "options": {
+                "cwd": "${workspaceFolder}/MIPS/app/build",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "cmake_mips_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "only_gen_mips_label",
+            "command": "python3",
+            "args": ["common/tools/gen_label_map_mips.py"],
+            "options": {
+                "cwd": "${workspaceFolder}",
+            }
+        },
+        {
+            "type": "shell",
+            "label": "make_mips_app",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "mips_bk_gen",
+                "only_make_mips_app",
+                "only_gen_mips_label",
+                "only_make_mips_app",
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_mips_app",
+            "command": "cp",
+            "args": ["./MIPS/app/build/mips_app.bin",
+                     "../output"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "make_mips_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_mips_all",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "parallel",
+            "dependsOn": [
+                // "build_mips_rootboot",
+                // "build_mips_funcboot",
+                "build_mips_app"
+            ]
+        },
+        /////////////////   riscv rootboot  //////////////////////
+        {
+            "type": "shell",
+            "label": "mkdir_riscv_rootboot",
+            "command": "mkdir",
+            "args": ["-Force",
+                    "./RISCV/rootboot/build"]
+        },
+        {
+            "type": "shell",
+            "label": "rm_build_riscv_rootboot",
+            "command": "Remove-Item",
+            "args": ["-Path",
+                     "./RISCV/rootboot/build",
+                     "-Recurse"],
+            "dependsOn": [
+                "mkdir_riscv_rootboot"
+            ]
+        },
+        {
+            "type": "shell", 
+            "label": "mk_build_riscv_rootboot",
+            "command": "mkdir",
+            "args": ["./RISCV/rootboot/build"],
+            "dependsOn": [
+                "rm_build_riscv_rootboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "cmake_riscv_rootboot",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-G",
+                "MinGW Makefiles",
+                "${workspaceFolder}/RISCV/rootboot"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/RISCV/rootboot/build",
+            },
+            "dependsOn": [
+                "mk_build_riscv_rootboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "make_riscv_rootboot",
+            "command": "mingw32-make",
+            "args": ["-j8",
+                     "V=1"],
+            // "args": ["V=1"],
+            "options": {
+                "cwd": "${workspaceFolder}/RISCV/rootboot/build",
+            },
+            "dependsOn": [
+                "cmake_riscv_rootboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_riscv_rootboot",
+            "command": "cp",
+            "args": ["./RISCV/rootboot/build/riscv_rootboot.*",
+                     "../output"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "make_riscv_rootboot" // 这里设置，说明了这个任务一定要在Task “cmake”执行之后方可执行
+            ]
+        },
+        /////////////////   riscv funcboot  //////////////////////
+        {
+            "type": "shell",
+            "label": "mkdir_riscv_funcboot",
+            "command": "mkdir",
+            "args": ["-Force",
+                    "./RISCV/funcboot/build"]
+        },
+        {
+            "type": "shell",
+            "label": "rm_build_riscv_funcboot",
+            "command": "Remove-Item",
+            "args": ["-Path",
+                     "./RISCV/funcboot/build",
+                     "-Recurse"],
+            "dependsOn": [
+                "mkdir_riscv_funcboot"
+            ]
+        },
+        {
+            "type": "shell", 
+            "label": "mk_build_riscv_funcboot",
+            "command": "mkdir",
+            "args": ["./RISCV/funcboot/build"],
+            "dependsOn": [
+                "rm_build_riscv_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "cmake_riscv_funcboot",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-G",
+                "MinGW Makefiles",
+                "${workspaceFolder}/RISCV/funcboot"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/RISCV/funcboot/build",
+            },
+            "dependsOn": [
+                "mk_build_riscv_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "make_riscv_funcboot",
+            "command": "mingw32-make",
+            "args": ["-j8",
+                     "V=1"],
+            // "args": ["V=1"],
+            "options": {
+                "cwd": "${workspaceFolder}/RISCV/funcboot/build",
+            },
+            "dependsOn": [
+                "cmake_riscv_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_riscv_funcboot",
+            "command": "cp",
+            "args": ["./RISCV/funcboot/build/riscv_funcboot.*",
+                     "../output"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "make_riscv_funcboot" // 这里设置，说明了这个任务一定要在Task “cmake”执行之后方可执行
+            ]
+        },
+        /////////////////   riscv app  //////////////////////
+        {
+            "type": "shell",
+            "label": "riscv_bk_gen",
+            "command": "cp",
+            "args": ["./RISCV/src/label.S",
+                     "./RISCV/src/gen.S"],
+            "options": {
+                "cwd": "${workspaceFolder}",
+            }
+        },
+        {
+            "type": "shell",
+            "label": "mkdir_riscv_app",
+            "command": "mkdir",
+            "args": ["-Force",
+                    "./RISCV/app/build"]
+        },
+        {
+            "type": "shell",
+            "label": "rm_build_riscv_app",
+            "command": "Remove-Item",
+            "args": ["-Path",
+                     "./RISCV/app/build",
+                     "-Recurse"],
+            "dependsOn": [
+                "mkdir_riscv_app"
+            ]
+        },
+        {
+            "type": "shell", 
+            "label": "mk_build_riscv_app",
+            "command": "mkdir",
+            "args": ["./RISCV/app/build"],
+            "dependsOn": [
+                "rm_build_riscv_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "cmake_riscv_app",
+            "command": "cmake",
+            "args": [
+                "-DCMAKE_VERBOSE_MAKEFILE=ON",
+                "-G",
+                "MinGW Makefiles",
+                "${workspaceFolder}/RISCV/app"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/RISCV/app/build",
+            },
+            "dependsOn": [
+                "mk_build_riscv_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "only_make_riscv_app",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "mingw32-make",
+            "args": ["-j8",
+                     "V=1"],
+            // "args": ["V=1"],
+            "options": {
+                "cwd": "${workspaceFolder}/RISCV/app/build",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "cmake_riscv_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "only_gen_riscv_label",
+            "command": "python3",
+            "args": ["common/tools/gen_label_map_riscv.py"],
+            "options": {
+                "cwd": "${workspaceFolder}",
+            }
+        },
+        {
+            "type": "shell",
+            "label": "make_riscv_app",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "riscv_bk_gen",
+                "only_make_riscv_app",
+                "only_gen_riscv_label",
+                "only_make_riscv_app",
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_riscv_app",
+            "command": "cp",
+            "args": ["./RISCV/app/build/riscv_app.bin",
+                     "../output"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "make_riscv_app"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_riscv_all",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceFolder}",
+            },
+            "dependsOrder": "parallel",
+            "dependsOn": [
+                // "build_riscv_rootboot",
+                // "build_riscv_funcboot",
+                "build_riscv_app"
+            ]
+        },
+        /////////////////////////////////////
+        {
+            "type": "shell",
+            "label": "only_make_all_app",
+            "group": {
+                "kind": "build", // 这里说明这个任务时输入"build"类型的，也就是说明，这是一个生成任务
+                "isDefault": true
+            },
+            "dependsOrder": "parallel",
+            "dependsOn": [
+                "only_make_arm_app",
+                "only_make_mips_app",
+                "only_make_riscv_app" // TODO why cannot run in vscode v1.81.0
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_all_app",
+            "group": {
+                "kind": "build", // 这里说明这个任务时输入"build"类型的，也就是说明，这是一个生成任务
+                "isDefault": true
+            },
+            "dependsOrder": "parallel",
+            "dependsOn": [
+                "build_arm_app",
+                "build_mips_app",
+                "build_riscv_app" // TODO why cannot run in vscode v1.81.0
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_all_boot",
+            "group": {
+                "kind": "build", // 这里说明这个任务时输入"build"类型的，也就是说明，这是一个生成任务
+                "isDefault": true
+            },
+            "dependsOrder": "parallel",
+            "dependsOn": [
+                "build_arm_rootboot", 
+                "build_arm_funcboot", 
+                "build_mips_rootboot", 
+                "build_mips_funcboot", 
+                "build_riscv_rootboot", 
+                "build_riscv_funcboot"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_all",
+            "group": {
+                "kind": "build", // 这里说明这个任务时输入"build"类型的，也就是说明，这是一个生成任务
+                "isDefault": true
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "build_arm_all",
+                "build_mips_all",
+                "build_riscv_all"
+            ]
+        },
+    ],
+    "version": "2.0.0"
+}

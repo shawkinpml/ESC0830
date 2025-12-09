@@ -1,0 +1,3 @@
+C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/rebuild_cache.dir
+C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/mips_app.elf.dir
+C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/edit_cache.dir

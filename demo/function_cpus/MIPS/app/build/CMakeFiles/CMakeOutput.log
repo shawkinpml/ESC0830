@@ -1,0 +1,300 @@
+The target system is: Generic -  - MIPS
+The host system is: Windows - 10.0.19045 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/bin/mips-mti-elf-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/ld.exe: warning: cannot find entry symbol __start; defaulting to 00000000004000d4
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/3.21.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/bin/mips-mti-elf-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/ld.exe: warning: cannot find entry symbol __start; defaulting to 00000000004000d4
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/3.21.2/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe -f Makefile cmTC_54cee/fast && C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_54cee.dir\build.make CMakeFiles/cmTC_54cee.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_54cee.dir/CMakeCCompilerABI.c.obj
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-gcc.exe   -v -o CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj -c C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-gcc.exe
+Target: mips-mti-elf
+Configured with: /scratch/mpf/overtest/62160/240198/shared/gcc/configure --prefix=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05 --host=x86_64-w64-mingw32 --disable-libssp --disable-libmudflap --disable-decimal-float --with-mips-plt --target=mips-mti-elf --with-newlib --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-sysroot=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/mips-mti-elf --with-build-sysroot=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/mips-mti-elf --with-bugurl=http://mips.com/mips-sdk-support/ --with-pkgversion='Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal'
+Thread model: single
+gcc version 6.3.0 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB'
+ c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/mips-mti-elf/6.3.0/cc1.exe -quiet -v -imultilib mips-r2-hard-newlib/lib -iprefix c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/ -isysroot c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c -meb -quiet -dumpbase CMakeCCompilerABI.c -march=mips32r2 -mplt -mips32r2 -msynci -mabi=32 -mfpxx -auxbase-strip CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\hujin\AppData\Local\Temp\ccJgdqXy.s
+GNU C11 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) version 6.3.0 (mips-mti-elf)
+	compiled by GNU C version 4.7.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/include"
+ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/lib/gcc/mips-mti-elf/6.3.0/../../../../include"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/include-fixed"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include"
+ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/include
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/include-fixed
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include
+End of search list.
+GNU C11 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) version 6.3.0 (mips-mti-elf)
+	compiled by GNU C version 4.7.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 9bf8b6efe735ba71a18789463772e782
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB'
+ c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/as.exe -v -EB -mips32r2 -O1 -no-mdebug -mabi=32 -march=mips32r2 -mfpxx --trap -o CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj C:\Users\hujin\AppData\Local\Temp\ccJgdqXy.s
+GNU assembler version 2.28.51 (mips-mti-elf) using BFD version (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) 2.28.51.20170703
+COMPILER_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/mips-mti-elf/6.3.0/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/
+LIBRARY_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/mips-r2-hard-newlib/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/lib/mips-r2-hard-newlib/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../mips-mti-elf/lib/mips-r2-hard-newlib/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../mips-mti-elf/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB'
+Linking C static library libcmTC_54cee.a
+C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -P CMakeFiles\cmTC_54cee.dir\cmake_clean_target.cmake
+C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_54cee.dir\link.txt --verbose=1
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-ar.exe qc libcmTC_54cee.a CMakeFiles/cmTC_54cee.dir/CMakeCCompilerABI.c.obj
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-ranlib.exe libcmTC_54cee.a
+mingw32-make.exe[1]: Leaving directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/include]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/include-fixed]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include]
+  end of search list found
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/include] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/lib/gcc/mips-mti-elf/6.3.0/include]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/include-fixed] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/lib/gcc/mips-mti-elf/6.3.0/include-fixed]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include]
+  implicit include dirs: [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/lib/gcc/mips-mti-elf/6.3.0/include;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/lib/gcc/mips-mti-elf/6.3.0/include-fixed;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(mips-mti-elf-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe -f Makefile cmTC_54cee/fast && C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_54cee.dir\build.make CMakeFiles/cmTC_54cee.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_54cee.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-gcc.exe   -v -o CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj -c C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-gcc.exe]
+  ignore line: [Target: mips-mti-elf]
+  ignore line: [Configured with: /scratch/mpf/overtest/62160/240198/shared/gcc/configure --prefix=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05 --host=x86_64-w64-mingw32 --disable-libssp --disable-libmudflap --disable-decimal-float --with-mips-plt --target=mips-mti-elf --with-newlib --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-sysroot=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/mips-mti-elf --with-build-sysroot=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/mips-mti-elf --with-bugurl=http://mips.com/mips-sdk-support/ --with-pkgversion='Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal']
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 6.3.0 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB']
+  ignore line: [ c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/mips-mti-elf/6.3.0/cc1.exe -quiet -v -imultilib mips-r2-hard-newlib/lib -iprefix c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/ -isysroot c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c -meb -quiet -dumpbase CMakeCCompilerABI.c -march=mips32r2 -mplt -mips32r2 -msynci -mabi=32 -mfpxx -auxbase-strip CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\hujin\AppData\Local\Temp\ccJgdqXy.s]
+  ignore line: [GNU C11 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) version 6.3.0 (mips-mti-elf)]
+  ignore line: [	compiled by GNU C version 4.7.4  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/include"]
+  ignore line: [ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/lib/gcc/mips-mti-elf/6.3.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include"]
+  ignore line: [ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/include]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/include-fixed]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C11 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) version 6.3.0 (mips-mti-elf)]
+  ignore line: [	compiled by GNU C version 4.7.4  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 9bf8b6efe735ba71a18789463772e782]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB']
+  ignore line: [ c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/as.exe -v -EB -mips32r2 -O1 -no-mdebug -mabi=32 -march=mips32r2 -mfpxx --trap -o CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj C:\Users\hujin\AppData\Local\Temp\ccJgdqXy.s]
+  ignore line: [GNU assembler version 2.28.51 (mips-mti-elf) using BFD version (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) 2.28.51.20170703]
+  ignore line: [COMPILER_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/mips-mti-elf/6.3.0/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/]
+  ignore line: [LIBRARY_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/mips-r2-hard-newlib/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/lib/mips-r2-hard-newlib/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../mips-mti-elf/lib/mips-r2-hard-newlib/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../mips-mti-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_54cee.dir\CMakeCCompilerABI.c.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB']
+  ignore line: [Linking C static library libcmTC_54cee.a]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -P CMakeFiles\cmTC_54cee.dir\cmake_clean_target.cmake]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_54cee.dir\link.txt --verbose=1]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-ar.exe qc libcmTC_54cee.a CMakeFiles/cmTC_54cee.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-ranlib.exe libcmTC_54cee.a]
+  ignore line: [mingw32-make.exe[1]: Leaving directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe -f Makefile cmTC_282fc/fast && C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_282fc.dir\build.make CMakeFiles/cmTC_282fc.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_282fc.dir/CMakeCXXCompilerABI.cpp.obj
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-g++.exe   -v -o CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj -c C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-g++.exe
+Target: mips-mti-elf
+Configured with: /scratch/mpf/overtest/62160/240198/shared/gcc/configure --prefix=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05 --host=x86_64-w64-mingw32 --disable-libssp --disable-libmudflap --disable-decimal-float --with-mips-plt --target=mips-mti-elf --with-newlib --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-sysroot=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/mips-mti-elf --with-build-sysroot=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/mips-mti-elf --with-bugurl=http://mips.com/mips-sdk-support/ --with-pkgversion='Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal'
+Thread model: single
+gcc version 6.3.0 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB'
+ c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/mips-mti-elf/6.3.0/cc1plus.exe -quiet -v -imultilib mips-r2-hard-newlib/lib -iprefix c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/ -isysroot c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp -meb -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=mips32r2 -mplt -mips32r2 -msynci -mabi=32 -mfpxx -auxbase-strip CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\hujin\AppData\Local\Temp\ccIFL2gx.s
+GNU C++14 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) version 6.3.0 (mips-mti-elf)
+	compiled by GNU C version 4.7.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/mips-mti-elf/mips-r2-hard-newlib/lib"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/backward"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/include"
+ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/lib/gcc/mips-mti-elf/6.3.0/../../../../include"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/include-fixed"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include"
+ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/mips-mti-elf/mips-r2-hard-newlib/lib
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/backward
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/include
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/include-fixed
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include
+End of search list.
+GNU C++14 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) version 6.3.0 (mips-mti-elf)
+	compiled by GNU C version 4.7.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 736b478e19c84f0bda1986988a296bd9
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB'
+ c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/as.exe -v -EB -mips32r2 -O1 -no-mdebug -mabi=32 -march=mips32r2 -mfpxx --trap -o CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\hujin\AppData\Local\Temp\ccIFL2gx.s
+GNU assembler version 2.28.51 (mips-mti-elf) using BFD version (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) 2.28.51.20170703
+COMPILER_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/mips-mti-elf/6.3.0/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/
+LIBRARY_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/mips-r2-hard-newlib/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/lib/mips-r2-hard-newlib/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../mips-mti-elf/lib/mips-r2-hard-newlib/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../mips-mti-elf/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB'
+Linking CXX static library libcmTC_282fc.a
+C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -P CMakeFiles\cmTC_282fc.dir\cmake_clean_target.cmake
+C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_282fc.dir\link.txt --verbose=1
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-ar.exe qc libcmTC_282fc.a CMakeFiles/cmTC_282fc.dir/CMakeCXXCompilerABI.cpp.obj
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-ranlib.exe libcmTC_282fc.a
+mingw32-make.exe[1]: Leaving directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/mips-mti-elf/mips-r2-hard-newlib/lib]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/backward]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/include]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/include-fixed]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include]
+  end of search list found
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include/c++/6.3.0]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/mips-mti-elf/mips-r2-hard-newlib/lib] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include/c++/6.3.0/mips-mti-elf/mips-r2-hard-newlib/lib]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/backward] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include/c++/6.3.0/backward]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/include] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/lib/gcc/mips-mti-elf/6.3.0/include]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/include-fixed] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/lib/gcc/mips-mti-elf/6.3.0/include-fixed]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include]
+  implicit include dirs: [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include/c++/6.3.0;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include/c++/6.3.0/mips-mti-elf/mips-r2-hard-newlib/lib;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include/c++/6.3.0/backward;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/lib/gcc/mips-mti-elf/6.3.0/include;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/lib/gcc/mips-mti-elf/6.3.0/include-fixed;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNUMipsEmbeddedToolchain/mips-mti-elf/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(mips-mti-elf-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe -f Makefile cmTC_282fc/fast && C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_282fc.dir\build.make CMakeFiles/cmTC_282fc.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_282fc.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-g++.exe   -v -o CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj -c C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-g++.exe]
+  ignore line: [Target: mips-mti-elf]
+  ignore line: [Configured with: /scratch/mpf/overtest/62160/240198/shared/gcc/configure --prefix=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05 --host=x86_64-w64-mingw32 --disable-libssp --disable-libmudflap --disable-decimal-float --with-mips-plt --target=mips-mti-elf --with-newlib --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-sysroot=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/mips-mti-elf --with-build-sysroot=/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/mips-mti-elf --with-bugurl=http://mips.com/mips-sdk-support/ --with-pkgversion='Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal']
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 6.3.0 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB']
+  ignore line: [ c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/mips-mti-elf/6.3.0/cc1plus.exe -quiet -v -imultilib mips-r2-hard-newlib/lib -iprefix c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/ -isysroot c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp -meb -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=mips32r2 -mplt -mips32r2 -msynci -mabi=32 -mfpxx -auxbase-strip CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\hujin\AppData\Local\Temp\ccIFL2gx.s]
+  ignore line: [GNU C++14 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) version 6.3.0 (mips-mti-elf)]
+  ignore line: [	compiled by GNU C version 4.7.4  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/mips-mti-elf/mips-r2-hard-newlib/lib"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/backward"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/include"]
+  ignore line: [ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf/scratch/mpf/overtest/62160/240274/shared/mips-mti-elf/2017.10-05/lib/gcc/mips-mti-elf/6.3.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/lib/gcc/../../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include"]
+  ignore line: [ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../mips-mti-elf/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/mips-mti-elf/mips-r2-hard-newlib/lib]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include/c++/6.3.0/backward]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/include]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/include-fixed]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnumipsembeddedtoolchain\bin\../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) version 6.3.0 (mips-mti-elf)]
+  ignore line: [	compiled by GNU C version 4.7.4  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 736b478e19c84f0bda1986988a296bd9]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB']
+  ignore line: [ c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/as.exe -v -EB -mips32r2 -O1 -no-mdebug -mabi=32 -march=mips32r2 -mfpxx --trap -o CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\hujin\AppData\Local\Temp\ccIFL2gx.s]
+  ignore line: [GNU assembler version 2.28.51 (mips-mti-elf) using BFD version (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) 2.28.51.20170703]
+  ignore line: [COMPILER_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/mips-mti-elf/6.3.0/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../libexec/gcc/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/bin/]
+  ignore line: [LIBRARY_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/mips-r2-hard-newlib/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/lib/mips-r2-hard-newlib/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../mips-mti-elf/lib/mips-r2-hard-newlib/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../lib/gcc/mips-mti-elf/6.3.0/../../../../mips-mti-elf/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnumipsembeddedtoolchain/bin/../mips-mti-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_282fc.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-march=mips32r2' '-mplt' '-mips32r2' '-msynci' '-mabi=32' '-mfpxx' '-EB']
+  ignore line: [Linking CXX static library libcmTC_282fc.a]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -P CMakeFiles\cmTC_282fc.dir\cmake_clean_target.cmake]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_282fc.dir\link.txt --verbose=1]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-ar.exe qc libcmTC_282fc.a CMakeFiles/cmTC_282fc.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNUMipsEmbeddedToolchain\bin\mips-mti-elf-ranlib.exe libcmTC_282fc.a]
+  ignore line: [mingw32-make.exe[1]: Leaving directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/MIPS/app/build/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+mips-mti-elf-gcc.exe (Codescape GNU Tools 2017.10-05 for MIPS MTI Bare Metal) 6.3.0
+Copyright (C) 2016 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+

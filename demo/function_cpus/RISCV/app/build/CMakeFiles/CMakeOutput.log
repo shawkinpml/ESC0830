@@ -1,0 +1,298 @@
+The target system is: Linux -  - RISCV
+The host system is: Windows - 10.0.19045 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/bin/riscv64-unknown-elf-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/3.21.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/bin/riscv64-unknown-elf-g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/3.21.2/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f88df/fast && C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f88df.dir\build.make CMakeFiles/cmTC_f88df.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f88df.dir/CMakeCCompilerABI.c.o
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-gcc.exe   -v -o CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o -c C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-gcc.exe
+Target: riscv64-unknown-elf
+Configured with: /home/tools/slave/workspace/riscv64_build_elf_mingw/build/../source/riscv/riscv-gcc/configure --target=riscv64-unknown-elf --host=i686-w64-mingw32 --prefix=/home/tools/slave/workspace/riscv64_build_elf_mingw/install --disable-shared --disable-threads --enable-languages=c,c++ --without-system-zlib --enable-tls --with-newlib --with-sysroot=/home/tools/slave/workspace/riscv64_build_elf_mingw/install/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --src=../../source/riscv/riscv-gcc --enable-checking=yes --with-pkgversion='C-SKY RISCV Tools V1.2.2 B20190731' --enable-multilib --with-abi=lp64 --with-arch=rv64gcxcki 'CFLAGS_FOR_TARGET=-Os  -mcmodel=medany' 'CXXFLAGS_FOR_TARGET=-Os  -mcmodel=medany'
+Thread model: single
+gcc version 8.1.0 (C-SKY RISCV Tools V1.2.2 B20190731) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o' '-c' '-march=rv64gcxcki' '-mabi=lp64'
+ c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/cc1.exe -quiet -v -imultilib rv64imacxcki/lp64 -iprefix c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/ -isysroot c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=rv64gcxcki -mabi=lp64 -auxbase-strip CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o -version -o C:\Users\hujin\AppData\Local\Temp\ccQWwl50.s
+GNU C17 (C-SKY RISCV Tools V1.2.2 B20190731) version 8.1.0 (riscv64-unknown-elf)
+	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include"
+ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf/home/tools/slave/workspace/riscv64_build_elf_mingw/install/lib/gcc/riscv64-unknown-elf/8.1.0/../../../../include"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include"
+ignoring duplicate directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/include
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include
+End of search list.
+GNU C17 (C-SKY RISCV Tools V1.2.2 B20190731) version 8.1.0 (riscv64-unknown-elf)
+	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+Compiler executable checksum: 6772acddda2a8c8d97f6c51e11d96abc
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o' '-c' '-march=rv64gcxcki' '-mabi=lp64'
+ c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/as.exe -v --traditional-format -march=rv64gcxcki -mabi=lp64 -o CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o C:\Users\hujin\AppData\Local\Temp\ccQWwl50.s
+GNU assembler version 2.32 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.32
+COMPILER_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/
+LIBRARY_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imacxcki/lp64/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imacxcki/lp64/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../riscv64-unknown-elf/lib/rv64imacxcki/lp64/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../riscv64-unknown-elf/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o' '-c' '-march=rv64gcxcki' '-mabi=lp64'
+Linking C static library libcmTC_f88df.a
+C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -P CMakeFiles\cmTC_f88df.dir\cmake_clean_target.cmake
+C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_f88df.dir\link.txt --verbose=1
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-ar.exe qc libcmTC_f88df.a CMakeFiles/cmTC_f88df.dir/CMakeCCompilerABI.c.o
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-ranlib.exe libcmTC_f88df.a
+mingw32-make.exe[1]: Leaving directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include]
+  end of search list found
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/lib/gcc/riscv64-unknown-elf/8.1.0/include]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include]
+  implicit include dirs: [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/lib/gcc/riscv64-unknown-elf/8.1.0/include;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(riscv64-unknown-elf-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe -f Makefile cmTC_f88df/fast && C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f88df.dir\build.make CMakeFiles/cmTC_f88df.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_f88df.dir/CMakeCCompilerABI.c.o]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-gcc.exe   -v -o CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o -c C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-gcc.exe]
+  ignore line: [Target: riscv64-unknown-elf]
+  ignore line: [Configured with: /home/tools/slave/workspace/riscv64_build_elf_mingw/build/../source/riscv/riscv-gcc/configure --target=riscv64-unknown-elf --host=i686-w64-mingw32 --prefix=/home/tools/slave/workspace/riscv64_build_elf_mingw/install --disable-shared --disable-threads --enable-languages=c c++ --without-system-zlib --enable-tls --with-newlib --with-sysroot=/home/tools/slave/workspace/riscv64_build_elf_mingw/install/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --src=../../source/riscv/riscv-gcc --enable-checking=yes --with-pkgversion='C-SKY RISCV Tools V1.2.2 B20190731' --enable-multilib --with-abi=lp64 --with-arch=rv64gcxcki 'CFLAGS_FOR_TARGET=-Os  -mcmodel=medany' 'CXXFLAGS_FOR_TARGET=-Os  -mcmodel=medany']
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 8.1.0 (C-SKY RISCV Tools V1.2.2 B20190731) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o' '-c' '-march=rv64gcxcki' '-mabi=lp64']
+  ignore line: [ c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/cc1.exe -quiet -v -imultilib rv64imacxcki/lp64 -iprefix c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/ -isysroot c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=rv64gcxcki -mabi=lp64 -auxbase-strip CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o -version -o C:\Users\hujin\AppData\Local\Temp\ccQWwl50.s]
+  ignore line: [GNU C17 (C-SKY RISCV Tools V1.2.2 B20190731) version 8.1.0 (riscv64-unknown-elf)]
+  ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include"]
+  ignore line: [ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf/home/tools/slave/workspace/riscv64_build_elf_mingw/install/lib/gcc/riscv64-unknown-elf/8.1.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include"]
+  ignore line: [ignoring duplicate directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/include]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (C-SKY RISCV Tools V1.2.2 B20190731) version 8.1.0 (riscv64-unknown-elf)]
+  ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [Compiler executable checksum: 6772acddda2a8c8d97f6c51e11d96abc]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o' '-c' '-march=rv64gcxcki' '-mabi=lp64']
+  ignore line: [ c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/as.exe -v --traditional-format -march=rv64gcxcki -mabi=lp64 -o CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o C:\Users\hujin\AppData\Local\Temp\ccQWwl50.s]
+  ignore line: [GNU assembler version 2.32 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.32]
+  ignore line: [COMPILER_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/]
+  ignore line: [LIBRARY_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imacxcki/lp64/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imacxcki/lp64/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../riscv64-unknown-elf/lib/rv64imacxcki/lp64/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../riscv64-unknown-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_f88df.dir\CMakeCCompilerABI.c.o' '-c' '-march=rv64gcxcki' '-mabi=lp64']
+  ignore line: [Linking C static library libcmTC_f88df.a]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -P CMakeFiles\cmTC_f88df.dir\cmake_clean_target.cmake]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_f88df.dir\link.txt --verbose=1]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-ar.exe qc libcmTC_f88df.a CMakeFiles/cmTC_f88df.dir/CMakeCCompilerABI.c.o]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-ranlib.exe libcmTC_f88df.a]
+  ignore line: [mingw32-make.exe[1]: Leaving directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe -f Makefile cmTC_edfbd/fast && C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_edfbd.dir\build.make CMakeFiles/cmTC_edfbd.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_edfbd.dir/CMakeCXXCompilerABI.cpp.o
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-g++.exe   -v -o CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o -c C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-g++.exe
+Target: riscv64-unknown-elf
+Configured with: /home/tools/slave/workspace/riscv64_build_elf_mingw/build/../source/riscv/riscv-gcc/configure --target=riscv64-unknown-elf --host=i686-w64-mingw32 --prefix=/home/tools/slave/workspace/riscv64_build_elf_mingw/install --disable-shared --disable-threads --enable-languages=c,c++ --without-system-zlib --enable-tls --with-newlib --with-sysroot=/home/tools/slave/workspace/riscv64_build_elf_mingw/install/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --src=../../source/riscv/riscv-gcc --enable-checking=yes --with-pkgversion='C-SKY RISCV Tools V1.2.2 B20190731' --enable-multilib --with-abi=lp64 --with-arch=rv64gcxcki 'CFLAGS_FOR_TARGET=-Os  -mcmodel=medany' 'CXXFLAGS_FOR_TARGET=-Os  -mcmodel=medany'
+Thread model: single
+gcc version 8.1.0 (C-SKY RISCV Tools V1.2.2 B20190731) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-march=rv64gcxcki' '-mabi=lp64'
+ c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/cc1plus.exe -quiet -v -imultilib rv64imacxcki/lp64 -iprefix c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/ -isysroot c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=rv64gcxcki -mabi=lp64 -auxbase-strip CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o -version -o C:\Users\hujin\AppData\Local\Temp\cctqTMfc.s
+GNU C++14 (C-SKY RISCV Tools V1.2.2 B20190731) version 8.1.0 (riscv64-unknown-elf)
+	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/riscv64-unknown-elf/rv64imacxcki/lp64"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/backward"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include"
+ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf/home/tools/slave/workspace/riscv64_build_elf_mingw/install/lib/gcc/riscv64-unknown-elf/8.1.0/../../../../include"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed"
+ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include"
+ignoring duplicate directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/riscv64-unknown-elf/rv64imacxcki/lp64
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/backward
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/include
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed
+ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include
+End of search list.
+GNU C++14 (C-SKY RISCV Tools V1.2.2 B20190731) version 8.1.0 (riscv64-unknown-elf)
+	compiled by GNU C version 5.3.1 20160211, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.1, isl version none
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+Compiler executable checksum: a060196d1e3df706cdddc901318b6d7b
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-march=rv64gcxcki' '-mabi=lp64'
+ c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/as.exe -v --traditional-format -march=rv64gcxcki -mabi=lp64 -o CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o C:\Users\hujin\AppData\Local\Temp\cctqTMfc.s
+GNU assembler version 2.32 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.32
+COMPILER_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/
+LIBRARY_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imacxcki/lp64/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imacxcki/lp64/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../riscv64-unknown-elf/lib/rv64imacxcki/lp64/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/;c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../riscv64-unknown-elf/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-march=rv64gcxcki' '-mabi=lp64'
+Linking CXX static library libcmTC_edfbd.a
+C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -P CMakeFiles\cmTC_edfbd.dir\cmake_clean_target.cmake
+C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_edfbd.dir\link.txt --verbose=1
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-ar.exe qc libcmTC_edfbd.a CMakeFiles/cmTC_edfbd.dir/CMakeCXXCompilerABI.cpp.o
+C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-ranlib.exe libcmTC_edfbd.a
+mingw32-make.exe[1]: Leaving directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/riscv64-unknown-elf/rv64imacxcki/lp64]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/backward]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed]
+    add: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include]
+  end of search list found
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include/c++/8.1.0]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/riscv64-unknown-elf/rv64imacxcki/lp64] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include/c++/8.1.0/riscv64-unknown-elf/rv64imacxcki/lp64]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/backward] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include/c++/8.1.0/backward]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/lib/gcc/riscv64-unknown-elf/8.1.0/include]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed]
+  collapse include dir [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include] ==> [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include]
+  implicit include dirs: [C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include/c++/8.1.0;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include/c++/8.1.0/riscv64-unknown-elf/rv64imacxcki/lp64;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include/c++/8.1.0/backward;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/lib/gcc/riscv64-unknown-elf/8.1.0/include;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed;C:/HJJ/Career/MimicMCU/third_party/ToolChains/GNURiscvEmbeddedToolchain/riscv64-unknown-elf/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(riscv64-unknown-elf-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe -f Makefile cmTC_edfbd/fast && C:/HJJ/Career/MimicMCU/third_party/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_edfbd.dir\build.make CMakeFiles/cmTC_edfbd.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_edfbd.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-g++.exe   -v -o CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o -c C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-g++.exe]
+  ignore line: [Target: riscv64-unknown-elf]
+  ignore line: [Configured with: /home/tools/slave/workspace/riscv64_build_elf_mingw/build/../source/riscv/riscv-gcc/configure --target=riscv64-unknown-elf --host=i686-w64-mingw32 --prefix=/home/tools/slave/workspace/riscv64_build_elf_mingw/install --disable-shared --disable-threads --enable-languages=c c++ --without-system-zlib --enable-tls --with-newlib --with-sysroot=/home/tools/slave/workspace/riscv64_build_elf_mingw/install/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --src=../../source/riscv/riscv-gcc --enable-checking=yes --with-pkgversion='C-SKY RISCV Tools V1.2.2 B20190731' --enable-multilib --with-abi=lp64 --with-arch=rv64gcxcki 'CFLAGS_FOR_TARGET=-Os  -mcmodel=medany' 'CXXFLAGS_FOR_TARGET=-Os  -mcmodel=medany']
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 8.1.0 (C-SKY RISCV Tools V1.2.2 B20190731) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-march=rv64gcxcki' '-mabi=lp64']
+  ignore line: [ c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/cc1plus.exe -quiet -v -imultilib rv64imacxcki/lp64 -iprefix c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/ -isysroot c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf C:\HJJ\Career\MimicMCU\third_party\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=rv64gcxcki -mabi=lp64 -auxbase-strip CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o -version -o C:\Users\hujin\AppData\Local\Temp\cctqTMfc.s]
+  ignore line: [GNU C++14 (C-SKY RISCV Tools V1.2.2 B20190731) version 8.1.0 (riscv64-unknown-elf)]
+  ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/riscv64-unknown-elf/rv64imacxcki/lp64"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/backward"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include"]
+  ignore line: [ignoring nonexistent directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf/home/tools/slave/workspace/riscv64_build_elf_mingw/install/lib/gcc/riscv64-unknown-elf/8.1.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include"]
+  ignore line: [ignoring duplicate directory "c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../riscv64-unknown-elf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/riscv64-unknown-elf/rv64imacxcki/lp64]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include/c++/8.1.0/backward]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/include]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed]
+  ignore line: [ c:\hjj\career\mimicmcu\third_party\toolchains\gnuriscvembeddedtoolchain\bin\../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (C-SKY RISCV Tools V1.2.2 B20190731) version 8.1.0 (riscv64-unknown-elf)]
+  ignore line: [	compiled by GNU C version 5.3.1 20160211  GMP version 6.1.2  MPFR version 3.1.5  MPC version 1.0.1  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [Compiler executable checksum: a060196d1e3df706cdddc901318b6d7b]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-march=rv64gcxcki' '-mabi=lp64']
+  ignore line: [ c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/as.exe -v --traditional-format -march=rv64gcxcki -mabi=lp64 -o CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o C:\Users\hujin\AppData\Local\Temp\cctqTMfc.s]
+  ignore line: [GNU assembler version 2.32 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.32]
+  ignore line: [COMPILER_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../libexec/gcc/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/]
+  ignore line: [LIBRARY_PATH=c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imacxcki/lp64/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imacxcki/lp64/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../riscv64-unknown-elf/lib/rv64imacxcki/lp64/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/]
+  ignore line: [c:/hjj/career/mimicmcu/third_party/toolchains/gnuriscvembeddedtoolchain/bin/../riscv64-unknown-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_edfbd.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-march=rv64gcxcki' '-mabi=lp64']
+  ignore line: [Linking CXX static library libcmTC_edfbd.a]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -P CMakeFiles\cmTC_edfbd.dir\cmake_clean_target.cmake]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_edfbd.dir\link.txt --verbose=1]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-ar.exe qc libcmTC_edfbd.a CMakeFiles/cmTC_edfbd.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [C:\HJJ\Career\MimicMCU\third_party\ToolChains\GNURiscvEmbeddedToolchain\bin\riscv64-unknown-elf-ranlib.exe libcmTC_edfbd.a]
+  ignore line: [mingw32-make.exe[1]: Leaving directory 'C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/app/build/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+riscv64-unknown-elf-gcc.exe (C-SKY RISCV Tools V1.2.2 B20190731) 8.1.0
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+

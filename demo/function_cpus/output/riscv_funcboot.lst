@@ -1,0 +1,731 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           RISC-V
+  Version:                           0x1
+  Entry point address:               0x11c800
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          17508 (bytes into file)
+  Flags:                             0x1, RVC, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         2
+  Size of section headers:           40 (bytes)
+  Number of section headers:         19
+  Section header string table index: 18
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        0011c800 000800 0003a0 00  AX  0   0 64
+  [ 2] .rodata           PROGBITS        0011cba0 0010c0 000000 00  WA  0   0  1
+  [ 3] .data             PROGBITS        20120000 0010c0 000000 00  WA  0   0  1
+  [ 4] .vectors          PROGBITS        20120000 001000 0000c0 00  WA  0   0 64
+  [ 5] .bss              NOBITS          201200c0 000000 000000 00  WA  0   0  1
+  [ 6] .heap             PROGBITS        201200c0 0010c0 000c00 00   W  0   0  8
+  [ 7] .stack_dummy      PROGBITS        201200c0 001cc0 000400 00   W  0   0  8
+  [ 8] .comment          PROGBITS        00000000 0020c0 000030 01  MS  0   0  1
+  [ 9] .riscv.attributes RISCV_ATTRIBUTES 00000000 0020f0 000029 00      0   0  1
+  [10] .debug_aranges    PROGBITS        00000000 002120 000060 00      0   0  8
+  [11] .debug_info       PROGBITS        00000000 002180 000ba8 00      0   0  1
+  [12] .debug_abbrev     PROGBITS        00000000 002d28 0003a5 00      0   0  1
+  [13] .debug_line       PROGBITS        00000000 0030cd 000544 00      0   0  1
+  [14] .debug_frame      PROGBITS        00000000 003614 00017c 00      0   0  4
+  [15] .debug_str        PROGBITS        00000000 003790 000687 01  MS  0   0  1
+  [16] .symtab           SYMTAB          00000000 003e18 000390 10     17  22  4
+  [17] .strtab           STRTAB          00000000 0041a8 000203 00      0   0  1
+  [18] .shstrtab         STRTAB          00000000 0043ab 0000b8 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x000000 0x0011c000 0x0011c000 0x00ba0 0x00ba0 R E 0x1000
+  LOAD           0x001000 0x20120000 0x0011cba0 0x000c0 0x000c0 RW  0x1000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text 
+   01     .vectors 
+
+riscv_funcboot.elf:     file format elf32-littleriscv
+riscv_funcboot.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x0011c800
+
+Program Header:
+    LOAD off    0x00000000 vaddr 0x0011c000 paddr 0x0011c000 align 2**12
+         filesz 0x00000ba0 memsz 0x00000ba0 flags r-x
+    LOAD off    0x00001000 vaddr 0x20120000 paddr 0x0011cba0 align 2**12
+         filesz 0x000000c0 memsz 0x000000c0 flags rw-
+
+Sections:
+Idx Name              Size      VMA       LMA       File off  Algn  Flags
+  0 .text             000003a0  0011c800  0011c800  00000800  2**6  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .rodata           00000000  0011cba0  0011cba0  000010c0  2**0  CONTENTS, ALLOC, LOAD, DATA
+  2 .data             00000000  20120000  0011cc60  000010c0  2**0  CONTENTS, ALLOC, LOAD, DATA
+  3 .vectors          000000c0  20120000  0011cba0  00001000  2**6  CONTENTS, ALLOC, LOAD, DATA
+  4 .bss              00000000  201200c0  0011cc60  00000000  2**0  ALLOC
+  5 .heap             00000c00  201200c0  201200c0  000010c0  2**3  CONTENTS
+  6 .stack_dummy      00000400  201200c0  201200c0  00001cc0  2**3  CONTENTS
+  7 .comment          00000030  00000000  00000000  000020c0  2**0  CONTENTS, READONLY
+  8 .riscv.attributes 00000029  00000000  00000000  000020f0  2**0  CONTENTS, READONLY
+  9 .debug_aranges    00000060  00000000  00000000  00002120  2**3  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_info       00000ba8  00000000  00000000  00002180  2**0  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_abbrev     000003a5  00000000  00000000  00002d28  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_line       00000544  00000000  00000000  000030cd  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_frame      0000017c  00000000  00000000  00003614  2**2  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_str        00000687  00000000  00000000  00003790  2**0  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+0011c800 l    d  .text	00000000 .text
+0011cba0 l    d  .rodata	00000000 .rodata
+20120000 l    d  .data	00000000 .data
+20120000 l    d  .vectors	00000000 .vectors
+201200c0 l    d  .bss	00000000 .bss
+201200c0 l    d  .heap	00000000 .heap
+201200c0 l    d  .stack_dummy	00000000 .stack_dummy
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    df *ABS*	00000000 CMakeFiles/riscv_funcboot.elf.dir/D_/MCU_WorkSpace/IntegrationTest/mcu4in_IT/function_cpus/RISCV/src/startup_simple.o
+0011c880 l       .text	00000000 Default_Handler
+0011c86c l       .text	00000000 __exit
+00000000 l    df *ABS*	00000000 e906.c
+0011c960 l     F .text	00000108 MemoryInit
+00000000 l    df *ABS*	00000000 funcboot.c
+201200c0 g       .heap	00000c00 __HeapBase
+0011ca90  w    F .text	0000000c __main
+20120000 g     O .vectors	00000000 __Vectors
+201200c0 g       .bss	00000000 __e_ram_bss_1
+0011cba0 g       .rodata	00000000 __e_rom
+0011cba0 g       .text	00000000 __etext
+20120cc0 g       .heap	00000000 __HeapLimit
+201200c0 g       .bss	00000000 __sbss
+0011cb00 g     F .text	0000001a __set_MEPC
+0011c800 g     F .text	0000006c Reset_Handler
+201200c0 g       .heap	00000000 end
+0011cba0 g       .rodata	00000000 __label_start__
+0011cb20 g     F .text	00000028 Jump_App
+0011cba0 g       *ABS*	00000000 __l_s_ram
+201200c0 g       .bss	00000000 __end
+0011cba0 g       .rodata	00000000 __srodata
+0011caa0 g     F .text	00000012 rv_disable_irq
+20120000 g       .data	00000000 __e_ram_data_1
+0011cba0 g       .rodata	00000000 __label_end__
+0011cb70 g     F .text	0000000e IRQInit
+0011cb80 g     F .text	00000012 main
+0011cac0 g     F .text	00000018 __get_SP
+201200c0 g       .heap	00000000 __end__
+20120000 g       .data	00000000 data_start
+0011ca70  w    F .text	00000014 SystemInit
+2012c000 g       .vectors	00000000 __StackTop
+20120000 g       .data	00000000 __s_ram_data_1
+0011c954 g       .text	00000000 __stext
+201200c0 g       .bss	00000000 __s_ram_bss_1
+2012c000 g       *ABS*	00000000 __stack
+201200c0 g       .bss	00000000 _end
+2012bc00 g       *ABS*	00000400 __StackLimit
+0011cb50 g     F .text	00000014 general_handle_trap
+20120000 g       .data	00000000 __data_start
+0011cae0 g     F .text	00000018 __set_SP
+
+
+
+Disassembly of section .text:
+
+0011c800 <Reset_Handler>:
+Reset_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:116
+  .global __dirver_test_service__
+  .weak __driver_test_service__
+  .type __driver_test_service__, %function
+Reset_Handler:
+	# enable FPU and accelerator if present, enable global irq
+	li t0, MSTATUS_FS | MSTATUS_XS | MSTATUS_MIE
+  11c800:	0001e2b7          	lui	t0,0x1e
+  11c804:	00828293          	addi	t0,t0,8 # 1e008 <Reset_Handler-0xfe7f8>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:117
+	csrs mstatus, t0
+  11c808:	3002a073          	csrs	mstatus,t0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:119
+
+  li t0, 0x888 # enable mie
+  11c80c:	000012b7          	lui	t0,0x1
+  11c810:	88828293          	addi	t0,t0,-1912 # 888 <Reset_Handler-0x11bf78>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:120
+  csrs mie, t0
+  11c814:	3042a073          	csrs	mie,t0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:123
+
+  #icache enable
+  li t1, 1
+  11c818:	4305                	li	t1,1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:124
+  csrrs t3, mhcr, t1
+  11c81a:	7c132e73          	csrrs	t3,mhcr,t1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:127
+
+  #dcache enable
+  li t1, 2
+  11c81e:	4309                	li	t1,2
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:128
+  csrrs t3, mhcr, t1
+  11c820:	7c132e73          	csrrs	t3,mhcr,t1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:131
+  
+	# enable MXSTATUS.THEADISAEE bit[22]
+	li t0,  0x400000
+  11c824:	004002b7          	lui	t0,0x400
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:132
+	csrs mxstatus, t0
+  11c828:	7c02a073          	csrs	mxstatus,t0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:134
+
+    la      a0, Default_Handler
+  11c82c:	00000517          	auipc	a0,0x0
+  11c830:	05450513          	addi	a0,a0,84 # 11c880 <Default_Handler>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:135
+    ori     a0, a0, 3
+  11c834:	00356513          	ori	a0,a0,3
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:136
+    csrw    mtvec, a0
+  11c838:	30551073          	csrw	mtvec,a0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:138
+
+    la      a0, __Vectors
+  11c83c:	20003517          	auipc	a0,0x20003
+  11c840:	7c450513          	addi	a0,a0,1988 # 20120000 <__Vectors>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:139
+    csrw    mtvt, a0
+  11c844:	30751073          	csrw	mtvt,a0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:141
+
+    la      sp, __stack
+  11c848:	2000f117          	auipc	sp,0x2000f
+  11c84c:	7b810113          	addi	sp,sp,1976 # 2012c000 <__stack>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:142
+    csrw    mscratch, sp
+  11c850:	34011073          	csrw	mscratch,sp
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:144
+
+    jal     SystemInit
+  11c854:	21c000ef          	jal	ra,11ca70 <SystemInit>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:146
+
+    la      a0, __driver_test_service__
+  11c858:	ffee3517          	auipc	a0,0xffee3
+  11c85c:	7a850513          	addi	a0,a0,1960 # 0 <Reset_Handler-0x11c800>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:147
+    beq     zero, a0, 1f
+  11c860:	00a00463          	beq	zero,a0,11c868 <Reset_Handler+0x68>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:148
+    jalr    a0
+  11c864:	9502                	jalr	a0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:149
+    j       __exit
+  11c866:	a019                	j	11c86c <__exit>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:152
+
+1:
+    jal     __main
+  11c868:	228000ef          	jal	ra,11ca90 <__main>
+
+0011c86c <__exit>:
+__exit():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:157
+
+    .size   Reset_Handler, . - Reset_Handler
+
+__exit:
+    j      __exit
+  11c86c:	a001                	j	11c86c <__exit>
+  11c86e:	00000013          	nop
+  11c872:	00000013          	nop
+  11c876:	00000013          	nop
+  11c87a:	00000013          	nop
+  11c87e:	0001                	nop
+
+0011c880 <Default_Handler>:
+Default_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:248
+  addi sp, sp, 40*REGBYTES
+.endm
+
+  .align 6
+Default_Handler:
+  SAVE_CONTEXT
+  11c880:	7135                	addi	sp,sp,-160
+  11c882:	c206                	sw	ra,4(sp)
+  11c884:	c40a                	sw	sp,8(sp)
+  11c886:	c60e                	sw	gp,12(sp)
+  11c888:	c812                	sw	tp,16(sp)
+  11c88a:	ca16                	sw	t0,20(sp)
+  11c88c:	cc1a                	sw	t1,24(sp)
+  11c88e:	ce1e                	sw	t2,28(sp)
+  11c890:	d022                	sw	s0,32(sp)
+  11c892:	d226                	sw	s1,36(sp)
+  11c894:	d42a                	sw	a0,40(sp)
+  11c896:	d62e                	sw	a1,44(sp)
+  11c898:	d832                	sw	a2,48(sp)
+  11c89a:	da36                	sw	a3,52(sp)
+  11c89c:	dc3a                	sw	a4,56(sp)
+  11c89e:	de3e                	sw	a5,60(sp)
+  11c8a0:	c0c2                	sw	a6,64(sp)
+  11c8a2:	c2c6                	sw	a7,68(sp)
+  11c8a4:	c4ca                	sw	s2,72(sp)
+  11c8a6:	c6ce                	sw	s3,76(sp)
+  11c8a8:	c8d2                	sw	s4,80(sp)
+  11c8aa:	cad6                	sw	s5,84(sp)
+  11c8ac:	ccda                	sw	s6,88(sp)
+  11c8ae:	cede                	sw	s7,92(sp)
+  11c8b0:	d0e2                	sw	s8,96(sp)
+  11c8b2:	d2e6                	sw	s9,100(sp)
+  11c8b4:	d4ea                	sw	s10,104(sp)
+  11c8b6:	d6ee                	sw	s11,108(sp)
+  11c8b8:	d8f2                	sw	t3,112(sp)
+  11c8ba:	daf6                	sw	t4,116(sp)
+  11c8bc:	dcfa                	sw	t5,120(sp)
+  11c8be:	defe                	sw	t6,124(sp)
+  11c8c0:	341022f3          	csrr	t0,mepc
+  11c8c4:	c116                	sw	t0,128(sp)
+  11c8c6:	342022f3          	csrr	t0,mcause
+  11c8ca:	c316                	sw	t0,132(sp)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:250
+
+  csrr a0, mcause
+  11c8cc:	34202573          	csrr	a0,mcause
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:251
+  csrr a1, mepc
+  11c8d0:	341025f3          	csrr	a1,mepc
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:252
+  mv a2, sp
+  11c8d4:	860a                	mv	a2,sp
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:253
+  jal general_handle_trap
+  11c8d6:	27a000ef          	jal	ra,11cb50 <general_handle_trap>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:255
+
+  RESTORE_CONTEXT
+  11c8da:	428a                	lw	t0,128(sp)
+  11c8dc:	34129073          	csrw	mepc,t0
+  11c8e0:	429a                	lw	t0,132(sp)
+  11c8e2:	34229073          	csrw	mcause,t0
+  11c8e6:	000022b7          	lui	t0,0x2
+  11c8ea:	88028293          	addi	t0,t0,-1920 # 1880 <Reset_Handler-0x11af80>
+  11c8ee:	3002a073          	csrs	mstatus,t0
+  11c8f2:	4092                	lw	ra,4(sp)
+  11c8f4:	4122                	lw	sp,8(sp)
+  11c8f6:	41b2                	lw	gp,12(sp)
+  11c8f8:	4242                	lw	tp,16(sp)
+  11c8fa:	42d2                	lw	t0,20(sp)
+  11c8fc:	4362                	lw	t1,24(sp)
+  11c8fe:	43f2                	lw	t2,28(sp)
+  11c900:	5402                	lw	s0,32(sp)
+  11c902:	5492                	lw	s1,36(sp)
+  11c904:	5522                	lw	a0,40(sp)
+  11c906:	55b2                	lw	a1,44(sp)
+  11c908:	5642                	lw	a2,48(sp)
+  11c90a:	56d2                	lw	a3,52(sp)
+  11c90c:	5762                	lw	a4,56(sp)
+  11c90e:	57f2                	lw	a5,60(sp)
+  11c910:	4806                	lw	a6,64(sp)
+  11c912:	4896                	lw	a7,68(sp)
+  11c914:	4926                	lw	s2,72(sp)
+  11c916:	49b6                	lw	s3,76(sp)
+  11c918:	4a46                	lw	s4,80(sp)
+  11c91a:	4ad6                	lw	s5,84(sp)
+  11c91c:	4b66                	lw	s6,88(sp)
+  11c91e:	4bf6                	lw	s7,92(sp)
+  11c920:	5c06                	lw	s8,96(sp)
+  11c922:	5c96                	lw	s9,100(sp)
+  11c924:	5d26                	lw	s10,104(sp)
+  11c926:	5db6                	lw	s11,108(sp)
+  11c928:	5e46                	lw	t3,112(sp)
+  11c92a:	5ed6                	lw	t4,116(sp)
+  11c92c:	5f66                	lw	t5,120(sp)
+  11c92e:	5ff6                	lw	t6,124(sp)
+  11c930:	610d                	addi	sp,sp,160
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/startup_simple.S:256
+  mret
+  11c932:	30200073          	mret
+	...
+
+0011c954 <__stext>:
+	...
+
+0011c960 <MemoryInit>:
+MemoryInit():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:25
+extern char __e_ram_data_1[];
+extern char __e_ram_bss_1[];
+extern char __s_ram_bss_1[];
+
+static void MemoryInit( void ) 
+{
+  11c960:	7179                	addi	sp,sp,-48
+  11c962:	d622                	sw	s0,44(sp)
+  11c964:	1800                	addi	s0,sp,48
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:26
+  char *dst = __s_ram_data_1;
+  11c966:	201207b7          	lui	a5,0x20120
+  11c96a:	00078793          	mv	a5,a5
+  11c96e:	fef42223          	sw	a5,-28(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:27
+  char *src = __l_s_ram;
+  11c972:	0011d7b7          	lui	a5,0x11d
+  11c976:	ba078793          	addi	a5,a5,-1120 # 11cba0 <__etext>
+  11c97a:	fef42023          	sw	a5,-32(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:54
+	// for(pulDest = &__s_ram_bss_1; pulDest < &__e_ram_bss_1; )
+    // {
+    //     *(pulDest++) = 0;
+    // }
+
+  unsigned int count = (__e_ram_data_1 - __s_ram_data_1) / 4;
+  11c97e:	201207b7          	lui	a5,0x20120
+  11c982:	00078713          	mv	a4,a5
+  11c986:	201207b7          	lui	a5,0x20120
+  11c98a:	00078793          	mv	a5,a5
+  11c98e:	40f707b3          	sub	a5,a4,a5
+  11c992:	41f7d713          	srai	a4,a5,0x1f
+  11c996:	8b0d                	andi	a4,a4,3
+  11c998:	97ba                	add	a5,a5,a4
+  11c99a:	8789                	srai	a5,a5,0x2
+  11c99c:	fcf42e23          	sw	a5,-36(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:55
+  if (__s_ram_data_1 != __l_s_ram) {
+  11c9a0:	201207b7          	lui	a5,0x20120
+  11c9a4:	00078713          	mv	a4,a5
+  11c9a8:	0011d7b7          	lui	a5,0x11d
+  11c9ac:	ba078793          	addi	a5,a5,-1120 # 11cba0 <__etext>
+  11c9b0:	04f70463          	beq	a4,a5,11c9f8 <MemoryInit+0x98>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:56
+    for (unsigned int i = 0; i < count; i++) {
+  11c9b4:	fe042623          	sw	zero,-20(s0)
+  11c9b8:	a815                	j	11c9ec <MemoryInit+0x8c>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:57 (discriminator 3)
+      *((volatile unsigned int *)(__s_ram_data_1 + i * 4)) = *((volatile unsigned int *)(__l_s_ram + i * 4));
+  11c9ba:	fec42783          	lw	a5,-20(s0)
+  11c9be:	00279713          	slli	a4,a5,0x2
+  11c9c2:	0011d7b7          	lui	a5,0x11d
+  11c9c6:	ba078793          	addi	a5,a5,-1120 # 11cba0 <__etext>
+  11c9ca:	973e                	add	a4,a4,a5
+  11c9cc:	fec42783          	lw	a5,-20(s0)
+  11c9d0:	00279693          	slli	a3,a5,0x2
+  11c9d4:	201207b7          	lui	a5,0x20120
+  11c9d8:	00078793          	mv	a5,a5
+  11c9dc:	97b6                	add	a5,a5,a3
+  11c9de:	4318                	lw	a4,0(a4)
+  11c9e0:	c398                	sw	a4,0(a5)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:56 (discriminator 3)
+    for (unsigned int i = 0; i < count; i++) {
+  11c9e2:	fec42783          	lw	a5,-20(s0)
+  11c9e6:	0785                	addi	a5,a5,1
+  11c9e8:	fef42623          	sw	a5,-20(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:56 (discriminator 1)
+  11c9ec:	fec42703          	lw	a4,-20(s0)
+  11c9f0:	fdc42783          	lw	a5,-36(s0)
+  11c9f4:	fcf763e3          	bltu	a4,a5,11c9ba <MemoryInit+0x5a>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:60
+    }
+  }
+  if (__e_ram_bss_1 - __s_ram_bss_1) {
+  11c9f8:	201207b7          	lui	a5,0x20120
+  11c9fc:	0c078713          	addi	a4,a5,192 # 201200c0 <__e_ram_bss_1>
+  11ca00:	201207b7          	lui	a5,0x20120
+  11ca04:	0c078793          	addi	a5,a5,192 # 201200c0 <__e_ram_bss_1>
+  11ca08:	04f70c63          	beq	a4,a5,11ca60 <MemoryInit+0x100>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:61
+    count = (__e_ram_bss_1 - __s_ram_bss_1) / 4;
+  11ca0c:	201207b7          	lui	a5,0x20120
+  11ca10:	0c078713          	addi	a4,a5,192 # 201200c0 <__e_ram_bss_1>
+  11ca14:	201207b7          	lui	a5,0x20120
+  11ca18:	0c078793          	addi	a5,a5,192 # 201200c0 <__e_ram_bss_1>
+  11ca1c:	40f707b3          	sub	a5,a4,a5
+  11ca20:	41f7d713          	srai	a4,a5,0x1f
+  11ca24:	8b0d                	andi	a4,a4,3
+  11ca26:	97ba                	add	a5,a5,a4
+  11ca28:	8789                	srai	a5,a5,0x2
+  11ca2a:	fcf42e23          	sw	a5,-36(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:62
+    for (unsigned int i = 0; i < count; i++) {
+  11ca2e:	fe042423          	sw	zero,-24(s0)
+  11ca32:	a00d                	j	11ca54 <MemoryInit+0xf4>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:63 (discriminator 3)
+      *((volatile unsigned int *)(__s_ram_bss_1 + i * 4)) = 0;
+  11ca34:	fe842783          	lw	a5,-24(s0)
+  11ca38:	00279713          	slli	a4,a5,0x2
+  11ca3c:	201207b7          	lui	a5,0x20120
+  11ca40:	0c078793          	addi	a5,a5,192 # 201200c0 <__e_ram_bss_1>
+  11ca44:	97ba                	add	a5,a5,a4
+  11ca46:	0007a023          	sw	zero,0(a5)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:62 (discriminator 3)
+    for (unsigned int i = 0; i < count; i++) {
+  11ca4a:	fe842783          	lw	a5,-24(s0)
+  11ca4e:	0785                	addi	a5,a5,1
+  11ca50:	fef42423          	sw	a5,-24(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:62 (discriminator 1)
+  11ca54:	fe842703          	lw	a4,-24(s0)
+  11ca58:	fdc42783          	lw	a5,-36(s0)
+  11ca5c:	fcf76ce3          	bltu	a4,a5,11ca34 <MemoryInit+0xd4>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:73
+	*/
+//   if( __e_ram_bss_1 - __s_ram_bss_1 ) 
+//   {
+// 	memset( __s_ram_bss_1, 0x00, ( __e_ram_bss_1 - __s_ram_bss_1 ));
+//   }
+}
+  11ca60:	0001                	nop
+  11ca62:	5432                	lw	s0,44(sp)
+  11ca64:	6145                	addi	sp,sp,48
+  11ca66:	8082                	ret
+  11ca68:	00000013          	nop
+  11ca6c:	00000013          	nop
+
+0011ca70 <SystemInit>:
+SystemInit():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:81
+/**
+ * @brief entry of whole chip initialization
+ * Since here SystemInit is a weak symbol, any vendor can override this symbol on its own wishes.
+ */
+__attribute__((weak)) void  SystemInit(void) 
+{
+  11ca70:	1141                	addi	sp,sp,-16
+  11ca72:	c606                	sw	ra,12(sp)
+  11ca74:	c422                	sw	s0,8(sp)
+  11ca76:	0800                	addi	s0,sp,16
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:85
+	/**
+	 * Initial the bss section and data decompression from LMA to VMA
+	 */
+	MemoryInit();
+  11ca78:	35e5                	jal	11c960 <MemoryInit>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:87
+#ifdef BOOTMODE
+    return;
+  11ca7a:	0001                	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:96
+	 * TODO: initial IO, memory, flash... 
+	 */
+	extern void Resource_Init(void);
+  	Resource_Init();
+    return;
+}
+  11ca7c:	40b2                	lw	ra,12(sp)
+  11ca7e:	4422                	lw	s0,8(sp)
+  11ca80:	0141                	addi	sp,sp,16
+  11ca82:	8082                	ret
+  11ca84:	00000013          	nop
+  11ca88:	00000013          	nop
+  11ca8c:	00000013          	nop
+
+0011ca90 <__main>:
+__main():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:99
+
+__attribute__((weak)) void __main()
+{
+  11ca90:	1141                	addi	sp,sp,-16
+  11ca92:	c606                	sw	ra,12(sp)
+  11ca94:	c422                	sw	s0,8(sp)
+  11ca96:	0800                	addi	s0,sp,16
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:102
+	// got to main 
+	extern int main(void);
+	main();
+  11ca98:	20e5                	jal	11cb80 <main>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\src/e906.c:104 (discriminator 1)
+	// loop here;
+	while(1);
+  11ca9a:	a001                	j	11ca9a <__main+0xa>
+  11ca9c:	0000                	unimp
+	...
+
+0011caa0 <rv_disable_irq>:
+rv_disable_irq():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:1
+void rv_disable_irq(void) { asm volatile("csrc mstatus, 8"); }
+  11caa0:	1141                	addi	sp,sp,-16
+  11caa2:	c622                	sw	s0,12(sp)
+  11caa4:	0800                	addi	s0,sp,16
+  11caa6:	30047073          	csrci	mstatus,8
+  11caaa:	0001                	nop
+  11caac:	4432                	lw	s0,12(sp)
+  11caae:	0141                	addi	sp,sp,16
+  11cab0:	8082                	ret
+  11cab2:	0001                	nop
+  11cab4:	00000013          	nop
+  11cab8:	00000013          	nop
+  11cabc:	00000013          	nop
+
+0011cac0 <__get_SP>:
+__get_SP():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:3
+
+unsigned int __get_SP(void) {
+  11cac0:	1101                	addi	sp,sp,-32
+  11cac2:	ce22                	sw	s0,28(sp)
+  11cac4:	1000                	addi	s0,sp,32
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:6
+  unsigned int result;
+
+  asm volatile("mv %0, sp" : "=r"(result));
+  11cac6:	878a                	mv	a5,sp
+  11cac8:	fef42623          	sw	a5,-20(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:7
+  return (result);
+  11cacc:	fec42783          	lw	a5,-20(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:8
+}
+  11cad0:	853e                	mv	a0,a5
+  11cad2:	4472                	lw	s0,28(sp)
+  11cad4:	6105                	addi	sp,sp,32
+  11cad6:	8082                	ret
+  11cad8:	00000013          	nop
+  11cadc:	00000013          	nop
+
+0011cae0 <__set_SP>:
+__set_SP():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:10
+
+void __set_SP(unsigned int sp) { asm volatile("mv sp, %0" : : "r"(sp) : "sp"); }
+  11cae0:	1101                	addi	sp,sp,-32
+  11cae2:	ce22                	sw	s0,28(sp)
+  11cae4:	1000                	addi	s0,sp,32
+  11cae6:	fea42623          	sw	a0,-20(s0)
+  11caea:	fec42783          	lw	a5,-20(s0)
+  11caee:	813e                	mv	sp,a5
+  11caf0:	0001                	nop
+  11caf2:	4472                	lw	s0,28(sp)
+  11caf4:	6105                	addi	sp,sp,32
+  11caf6:	8082                	ret
+  11caf8:	00000013          	nop
+  11cafc:	00000013          	nop
+
+0011cb00 <__set_MEPC>:
+__set_MEPC():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:12
+
+void __set_MEPC(unsigned int mepc) { asm volatile("csrw mepc, %0" : : "r"(mepc)); }
+  11cb00:	1101                	addi	sp,sp,-32
+  11cb02:	ce22                	sw	s0,28(sp)
+  11cb04:	1000                	addi	s0,sp,32
+  11cb06:	fea42623          	sw	a0,-20(s0)
+  11cb0a:	fec42783          	lw	a5,-20(s0)
+  11cb0e:	34179073          	csrw	mepc,a5
+  11cb12:	0001                	nop
+  11cb14:	4472                	lw	s0,28(sp)
+  11cb16:	6105                	addi	sp,sp,32
+  11cb18:	8082                	ret
+  11cb1a:	00000013          	nop
+  11cb1e:	0001                	nop
+
+0011cb20 <Jump_App>:
+Jump_App():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:15
+
+extern char __stack[];
+void Jump_App(unsigned int address) {
+  11cb20:	1101                	addi	sp,sp,-32
+  11cb22:	ce06                	sw	ra,28(sp)
+  11cb24:	cc22                	sw	s0,24(sp)
+  11cb26:	1000                	addi	s0,sp,32
+  11cb28:	fea42623          	sw	a0,-20(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:16
+  __set_SP(__stack);  // Load new stack pointer address 0x201080d0
+  11cb2c:	2012c7b7          	lui	a5,0x2012c
+  11cb30:	00078793          	mv	a5,a5
+  11cb34:	853e                	mv	a0,a5
+  11cb36:	376d                	jal	11cae0 <__set_SP>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:19
+
+  // asm volatile("la a0, 0x00100000");
+  asm volatile("la a0, 0x00100000");
+  11cb38:	00100537          	lui	a0,0x100
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:20
+  asm volatile("jalr a0");
+  11cb3c:	9502                	jalr	a0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:21
+}
+  11cb3e:	0001                	nop
+  11cb40:	40f2                	lw	ra,28(sp)
+  11cb42:	4462                	lw	s0,24(sp)
+  11cb44:	6105                	addi	sp,sp,32
+  11cb46:	8082                	ret
+  11cb48:	00000013          	nop
+  11cb4c:	00000013          	nop
+
+0011cb50 <general_handle_trap>:
+general_handle_trap():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:24
+
+void general_handle_trap(unsigned int cause, unsigned int epc, unsigned int regs[32])
+{
+  11cb50:	1101                	addi	sp,sp,-32
+  11cb52:	ce22                	sw	s0,28(sp)
+  11cb54:	1000                	addi	s0,sp,32
+  11cb56:	fea42623          	sw	a0,-20(s0)
+  11cb5a:	feb42423          	sw	a1,-24(s0)
+  11cb5e:	fec42223          	sw	a2,-28(s0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:25 (discriminator 1)
+  while(1){};
+  11cb62:	a001                	j	11cb62 <general_handle_trap+0x12>
+  11cb64:	00000013          	nop
+  11cb68:	00000013          	nop
+  11cb6c:	00000013          	nop
+
+0011cb70 <IRQInit>:
+IRQInit():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:28
+}
+
+void IRQInit() {
+  11cb70:	1141                	addi	sp,sp,-16
+  11cb72:	c622                	sw	s0,12(sp)
+  11cb74:	0800                	addi	s0,sp,16
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:29
+  return;
+  11cb76:	0001                	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:30
+}
+  11cb78:	4432                	lw	s0,12(sp)
+  11cb7a:	0141                	addi	sp,sp,16
+  11cb7c:	8082                	ret
+  11cb7e:	0001                	nop
+
+0011cb80 <main>:
+main():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:32
+
+int main(void) {
+  11cb80:	1141                	addi	sp,sp,-16
+  11cb82:	c606                	sw	ra,12(sp)
+  11cb84:	c422                	sw	s0,8(sp)
+  11cb86:	0800                	addi	s0,sp,16
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:33
+  rv_disable_irq();
+  11cb88:	3f21                	jal	11caa0 <rv_disable_irq>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:35
+  //   uart_printf("\nE906, bootroot.\n");
+  Jump_App(0x00100000);
+  11cb8a:	00100537          	lui	a0,0x100
+  11cb8e:	3f49                	jal	11cb20 <Jump_App>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\RISCV\funcboot/funcboot.c:36 (discriminator 1)
+  while (1)
+  11cb90:	a001                	j	11cb90 <main+0x10>
+	...

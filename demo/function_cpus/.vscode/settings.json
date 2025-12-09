@@ -1,0 +1,26 @@
+{
+    "cmake.generator": "MinGW Makefiles",
+    "C_Cpp.intelliSenseEngine": "Default",
+    "files.associations": {
+      "*.inc": "cpp",
+      "core_cm3.h": "c",
+      "io_e203.h": "c",
+      "xil_io.h": "c",
+      "xparameters.h": "c",
+      "hbird_sdk_hal.h": "c",
+      "m32c0.h": "c",
+      "io_mips.h": "c",
+      "print.h": "c",
+      "io_arm.h": "c",
+      "hm_libcfg_default.h": "c",
+      "hm_types.h": "c",
+      "hm3s9b96.h": "c",
+      "hm_i2c.h": "c",
+      "driver_common.h": "c",
+      "delay.h": "c",
+      "uart_print.h": "c",
+      "hm4c123.h": "c",
+      "io_mcu.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

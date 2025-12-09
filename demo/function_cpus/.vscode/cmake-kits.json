@@ -1,0 +1,14 @@
+[
+    {
+        "name": "GCC ARM Embedded",
+        "toolchainFile": "${workspaceRoot}/ARM/arm.cmake"
+    },
+    {
+        "name": "GCC RISCV Embedded",
+        "toolchainFile": "${workspaceRoot}/RISCV/riscv-nuclei-e203.cmake"
+    },
+    {
+        "name": "GCC MIPS Embedded",
+        "toolchainFile": "${workspaceRoot}/MIPS/mips.cmake"
+    }
+]

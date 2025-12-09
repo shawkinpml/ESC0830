@@ -1,0 +1,638 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           MIPS R3000
+  Version:                           0x1
+  Entry point address:               0xbfc00000
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          106108 (bytes into file)
+  Flags:                             0x70001001, noreorder, o32, mips32r2
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         1
+  Size of section headers:           40 (bytes)
+  Number of section headers:         17
+  Section header string table index: 16
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text_init        PROGBITS        bfc00000 010468 000000 00   W  0   0  1
+  [ 2] .text_c           PROGBITS        bfc00000 010000 000468 00  AX  0   0  4
+  [ 3] .rodata           PROGBITS        bfc00468 010468 000000 00  WA  0   0  1
+  [ 4] .data             PROGBITS        80120000 010468 000000 00  WA  0   0  1
+  [ 5] .gnu.attributes   GNU_ATTRIBUTES  00000000 010468 000010 00      0   0  1
+  [ 6] .comment          PROGBITS        00000000 010478 000044 01  MS  0   0  1
+  [ 7] .debug_line       MIPS_DWARF      00000000 0104bc 0004d1 00      0   0  1
+  [ 8] .debug_info       MIPS_DWARF      00000000 01098d 0009bc 00      0   0  1
+  [ 9] .debug_abbrev     MIPS_DWARF      00000000 011349 000225 00      0   0  1
+  [10] .debug_aranges    MIPS_DWARF      00000000 011570 000040 00      0   0  8
+  [11] .debug_str        MIPS_DWARF      00000000 0115b0 006a74 01  MS  0   0  1
+  [12] .debug_macro      MIPS_DWARF      00000000 018024 00178f 00      0   0  1
+  [13] .debug_frame      MIPS_DWARF      00000000 0197b4 000058 00      0   0  4
+  [14] .symtab           SYMTAB          00000000 01980c 000360 10     15  25  4
+  [15] .strtab           STRTAB          00000000 019b6c 000261 00      0   0  1
+  [16] .shstrtab         STRTAB          00000000 019dcd 0000af 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x010000 0xbfc00000 0xbfc00000 0x00468 0x00468 R E 0x10000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text_c 
+
+mips_rootboot.elf:     file format elf32-tradlittlemips
+mips_rootboot.elf
+architecture: mips:isa32r2, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0xbfc00000
+
+Program Header:
+    LOAD off    0x00010000 vaddr 0xbfc00000 paddr 0xbfc00000 align 2**16
+         filesz 0x00000468 memsz 0x00000468 flags r-x
+private flags = 70001001: [abi=O32] [mips32r2] [not 32bitmode] [noreorder]
+
+Sections:
+Idx Name            Size      VMA       LMA       File off  Algn  Flags
+  0 .text_init      00000000  bfc00000  bfc00000  00010468  2**0  CONTENTS
+  1 .text_c         00000468  bfc00000  bfc00000  00010000  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rodata         00000000  bfc00468  bfc00468  00010468  2**0  CONTENTS, ALLOC, LOAD, DATA
+  3 .data           00000000  80120000  80120000  00010468  2**0  CONTENTS, ALLOC, LOAD, DATA
+  4 .gnu.attributes 00000010  00000000  00000000  00010468  2**0  CONTENTS, READONLY
+  5 .comment        00000044  00000000  00000000  00010478  2**0  CONTENTS, READONLY
+  6 .debug_line     000004d1  00000000  00000000  000104bc  2**0  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info     000009bc  00000000  00000000  0001098d  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev   00000225  00000000  00000000  00011349  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_aranges  00000040  00000000  00000000  00011570  2**3  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str      00006a74  00000000  00000000  000115b0  2**0  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_macro    0000178f  00000000  00000000  00018024  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_frame    00000058  00000000  00000000  000197b4  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+bfc00000 l    d  .text_init	00000000 .text_init
+bfc00000 l    d  .text_c	00000000 .text_c
+bfc00468 l    d  .rodata	00000000 .rodata
+80120000 l    d  .data	00000000 .data
+00000000 l    d  .gnu.attributes	00000000 .gnu.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 CMakeFiles/mips_rootboot.elf.dir/D_/MCU_WorkSpace/IntegrationTest/mcu4in_IT/function_cpus/MIPS/src/asm/start.S.obj
+bfc00180 l       .text_c	00000000 __general_exception_loop
+bfc001ac l       .text_c	00000000 init_resources
+bfc001f8 l       .text_c	00000000 all_done
+bfc00204 l       .text_c	00000000 copy_data
+bfc00244 l       .text_c	00000000 zero_bss
+bfc0022c l       .text_c	00000000 next_ram_dword
+bfc00274 l       .text_c	00000000 copy_c2_ram_done
+bfc00264 l       .text_c	00000000 next_bss_word
+bfc002dc l       .text_c	00000000 done_wr
+00000000 l    df *ABS*	00000000 D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot\rootboot.c
+80120000 g       .data	00000000 __HeapBase
+bfc00000 g       *ABS*	00000000 _boot_rom
+80127ff0 g       *ABS*	00000000 _gp
+80120000 g       .data	00000000 __HeapLimit
+80120000 g       *ABS*	00000000 _fdata_ram
+bfc00198 g     F .text_c	00000068 __cpu_init
+bfc00468 g       *ABS*	00000000 rodata_start
+bfc00000 g       *ABS*	00000000 _ftext_rom
+80120000 g       .text_c	00000000 _freemem
+80120000 g       .data	00000000 end
+bfc00468 g       .rodata	00000000 __label_start__
+bfc00000 g       *ABS*	00000000 _etext_rom
+bfc00468 g       .rodata	00000000 __label_end__
+bfc0042c g     F .text_c	0000003c main
+bfc002ec g     F .text_c	00000140 Boot_Jump
+bfc00000 g       *ABS*	00000000 _ftext_c_rom
+80120000 g       .data	00000000 __end__
+8012c000 g       .text_c	00000000 __StackTop
+bfc00468 g       *ABS*	00000000 rodata_end
+bfc0027c g     F .text_c	00000070 init_cp0
+8012c000 g       *ABS*	00000000 __stack
+bfc00200 g     F .text_c	0000007c copy_c2_ram
+80120000 g       .text_c	00000000 _end
+bfc00000 g     F .text_c	00000024 __reset_vector
+bfc00468 g       *ABS*	00000000 _etext_c_rom
+8012c000 g       *ABS*	00000000 __StackLimit
+80120000 g       *ABS*	00000000 _edata_ram
+bfc00468 g       .text_c	00000000 _fdata_rom
+80120000 g       .text_c	00000000 _fbss
+
+
+
+Disassembly of section .text_c:
+
+bfc00000 <__reset_vector>:
+__reset_vector():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:42
+	# and jumps to it. This does 2 things; First it will jump to a KSEG1 address which is a
+	# mirror of the KSEG0 BEV address but cacheable. Second it will do a mode switch to
+	# enable micromips mode.
+
+LEAF(__reset_vector)
+	la a2,__cpu_init
+bfc00000:	3c06bfc0 	lui	a2,0xbfc0
+bfc00004:	24c60198 	addiu	a2,a2,408
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:43
+	mtc0	$0, C0_COUNT  	    # Clear cp0 Count (Used to measure boot time.)
+bfc00008:	40804800 	mtc0	zero,c0_count
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:44
+	jr a2
+bfc0000c:	00c00008 	jr	a2
+bfc00010:	00000000 	nop
+	...
+
+bfc00180 <__general_exception_loop>:
+__general_exception_loop():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:64
+	.org 0x180
+	.set push
+	.set nomicromips                        # This code assumes exceptions are handled in MIPS32 mode
+.weak _mips_general_exception
+__general_exception_loop:
+	LA	k1, _mips_general_exception
+bfc00180:	3c1b0000 	lui	k1,0x0
+bfc00184:	277b0000 	addiu	k1,k1,0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:65
+	beqz    k1, __general_exception_loop
+bfc00188:	1360fffd 	beqz	k1,bfc00180 <__general_exception_loop>
+bfc0018c:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:66
+	jr	k1
+bfc00190:	03600008 	jr	k1
+bfc00194:	00000000 	nop
+
+bfc00198 <__cpu_init>:
+__cpu_init():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:121
+LEAF(__cpu_init)
+
+	# Verify the code is here due to a reset and not NMI. If this is an NMI then trigger
+	# a debugger breakpoint using a sdbp instruction.
+
+    mfc0    s1, C0_STATUS              	# Read CP0 Status
+bfc00198:	40116000 	mfc0	s1,c0_status
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:122
+    ext	    s1, s1, 19, 1				# extract NMI
+bfc0019c:	7e3104c0 	ext	s1,s1,0x13,0x1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:123
+    beqz    s1, init_resources 		 	# Branch if this is NOT an NMI exception.
+bfc001a0:	12200002 	beqz	s1,bfc001ac <init_resources>
+bfc001a4:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:124
+    sdbbp                              	# Failed assertion: NMI.
+bfc001a8:	7000003f 	sdbbp
+
+bfc001ac <init_resources>:
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:131
+init_resources:  						# initializes resources for "cpu".
+
+	# Set the global pointer register address to _gp and the stack pointer register to
+	# STACK_BASE_ADDR these values are assigned in the linker file
+
+    la      gp, _gp						# All share globals.
+bfc001ac:	3c1c8012 	lui	gp,0x8012
+bfc001b0:	279c7ff0 	addiu	gp,gp,32752
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:133
+	#li      sp, STACK_BASE_ADDR		# LI RD, IMM32  <--> RD = IMM32
+	la      sp, __stack                 # LA RD, LABEL  <--> RD = ADDRESS(LABEL)
+bfc001b4:	3c1d8013 	lui	sp,0x8013
+bfc001b8:	27bdc000 	addiu	sp,sp,-16384
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:137
+
+    # Initialize CP0 registers
+
+    la a2,     init_cp0    				# Init CP0 Status, Count, Compare, Watch*, and Cause.
+bfc001bc:	3c06bfc0 	lui	a2,0xbfc0
+bfc001c0:	24c6027c 	addiu	a2,a2,636
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:138
+    jalr a2
+bfc001c4:	00c0f809 	jalr	a2
+bfc001c8:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:142
+
+	# Copy "C" code (main.c) and data to RAM and zero bss
+
+    la 		a2, copy_c2_ram
+bfc001cc:	3c06bfc0 	lui	a2,0xbfc0
+bfc001d0:	24c60200 	addiu	a2,a2,512
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:143
+    jalr 	a2
+bfc001d4:	00c0f809 	jalr	a2
+bfc001d8:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:146
+
+    # Prepare for eret to main (sp and gp set in set_gpr_boot_values).
+    la      ra, all_done				# If main returns then go to all_done:.
+bfc001dc:	3c1fbfc0 	lui	ra,0xbfc0
+bfc001e0:	27ff01f8 	addiu	ra,ra,504
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:147
+    la      v0, main					# load the address of the main function
+bfc001e4:	3c02bfc0 	lui	v0,0xbfc0
+bfc001e8:	2442042c 	addiu	v0,v0,1068
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:148
+    mtc0    v0, C0_ERRPC				# Write ErrorEPC with the address of main
+bfc001ec:	4082f000 	mtc0	v0,c0_errorepc
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:149
+    ehb									# clear hazards (makes sure write to ErrorEPC has completed)
+bfc001f0:	000000c0 	ehb
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:152
+
+    # Return from exception will now execute code in main
+    eret   								# Exit reset exception handler and start execution of main().
+bfc001f4:	42000018 	eret
+
+bfc001f8 <all_done>:
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/start.S:158
+
+/**************************************************************************************
+**************************************************************************************/
+all_done:
+    # If main returns it will return to this point.  Just spin here.
+    b       all_done
+bfc001f8:	1000ffff 	b	bfc001f8 <all_done>
+bfc001fc:	00000000 	nop
+
+bfc00200 <copy_c2_ram>:
+copy_c2_ram():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:51
+
+/**************************************************************************************
+**************************************************************************************/
+LEAF(copy_c2_ram)
+
+	li      all_ones, 0xffffffff
+bfc00200:	2411ffff 	li	s1,-1
+
+bfc00204 <copy_data>:
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:75
+    bne     end_addr, destination_addr, next_ram_word
+*/
+
+copy_data:
+// now copy the data
+    LA      source_addr, _fdata_rom
+bfc00204:	3c05bfc0 	lui	a1,0xbfc0
+bfc00208:	24a50468 	addiu	a1,a1,1128
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:76
+    LA      destination_addr,  _fdata_ram
+bfc0020c:	3c068012 	lui	a2,0x8012
+bfc00210:	24c60000 	addiu	a2,a2,0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:77
+    LA      end_addr, _edata_ram
+bfc00214:	3c078012 	lui	a3,0x8012
+bfc00218:	24e70000 	addiu	a3,a3,0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:81
+    #if !defined(EVA) && !defined(MPU)  // NOTE EVA mode assumed to be uncached
+    	// Switch address to uncached (kseg1) so copy will go directly
+    	// to memory
+    	ins     destination_addr, all_ones, 29, 1
+bfc0021c:	7e26ef44 	ins	a2,s1,0x1d,0x1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:82
+    	ins     end_addr, all_ones, 29, 1
+bfc00220:	7e27ef44 	ins	a3,s1,0x1d,0x1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:84
+    #endif
+    beq     destination_addr, end_addr, zero_bss  // if no data skip ahead
+bfc00224:	10c70007 	beq	a2,a3,bfc00244 <zero_bss>
+bfc00228:	00000000 	nop
+
+bfc0022c <next_ram_dword>:
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:86
+next_ram_dword:
+    lw      data, 0(source_addr)
+bfc0022c:	8ca40000 	lw	a0,0(a1)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:87
+    sw      data, 0(destination_addr)
+bfc00230:	acc40000 	sw	a0,0(a2)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:88
+    addiu   destination_addr, 4
+bfc00234:	24c60004 	addiu	a2,a2,4
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:89
+    addiu   source_addr, 4
+bfc00238:	24a50004 	addiu	a1,a1,4
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:90
+    bne     end_addr, destination_addr, next_ram_dword
+bfc0023c:	14e6fffb 	bne	a3,a2,bfc0022c <next_ram_dword>
+bfc00240:	00000000 	nop
+
+bfc00244 <zero_bss>:
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:93
+
+zero_bss:
+    LA      destination_addr, _fbss
+bfc00244:	3c068012 	lui	a2,0x8012
+bfc00248:	24c60000 	addiu	a2,a2,0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:94
+    LA      end_addr, _end
+bfc0024c:	3c078012 	lui	a3,0x8012
+bfc00250:	24e70000 	addiu	a3,a3,0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:98
+    #ifndef EVA  // NOTE EVA mode assumed to be uncached
+    	// Switch address to uncached (kseg1) so copy will go directly
+    	// to memory
+	    ins     destination_addr, all_ones, 29, 1
+bfc00254:	7e26ef44 	ins	a2,s1,0x1d,0x1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:99
+	    ins     end_addr, all_ones, 29, 1
+bfc00258:	7e27ef44 	ins	a3,s1,0x1d,0x1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:101
+    #endif
+    beq     destination_addr, end_addr, copy_c2_ram_done
+bfc0025c:	10c70005 	beq	a2,a3,bfc00274 <copy_c2_ram_done>
+bfc00260:	00000000 	nop
+
+bfc00264 <next_bss_word>:
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:103
+next_bss_word:
+    sw      zero, 0(destination_addr)
+bfc00264:	acc00000 	sw	zero,0(a2)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:104
+    addiu   destination_addr, 4
+bfc00268:	24c60004 	addiu	a2,a2,4
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:105
+    bne     destination_addr, end_addr, next_bss_word
+bfc0026c:	14c7fffd 	bne	a2,a3,bfc00264 <next_bss_word>
+bfc00270:	00000000 	nop
+
+bfc00274 <copy_c2_ram_done>:
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/copy_c2_ram.s:108
+
+copy_c2_ram_done:
+    jalr	zero,      ra
+bfc00274:	03e00009 	jalr	zero,ra
+bfc00278:	00000000 	nop
+
+bfc0027c <init_cp0>:
+init_cp0():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:45
+/**************************************************************************************
+**************************************************************************************/
+LEAF(init_cp0)
+
+    // Initialize Status
+	li	    a1, 0x00400004		// (M_StatusERL | M_StatusBEV), close timer-interrupt
+bfc0027c:	3c050040 	lui	a1,0x40
+bfc00280:	34a50004 	ori	a1,a1,0x4
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:46
+	mtc0	a1, C0_STATUS		// write C0_Status
+bfc00284:	40856000 	mtc0	a1,c0_status
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:49
+
+	// Initialize Watch registers if implemented.
+	mfc0	a0, C0_CONFIG1		// read C0_Config1
+bfc00288:	40048001 	mfc0	a0,c0_config1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:50
+	ext	    a1, a0, 3, 1		// extract bit 3 WR (Watch registers implemented)
+bfc0028c:	7c8500c0 	ext	a1,a0,0x3,0x1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:51
+	beq 	a1, zero, done_wr
+bfc00290:	10a00012 	beqz	a1,bfc002dc <done_wr>
+bfc00294:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:53
+
+	li    	a1, 0x7				// (M_WatchHiI | M_WatchHiR | M_WatchHiW)
+bfc00298:	24050007 	li	a1,7
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:56
+
+	// Clear Watch Status bits and disable watch exceptions
+	mtc0	a1, C0_WATCHHI		// write C0_WatchHi0
+bfc0029c:	40859800 	mtc0	a1,c0_watchhi
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:57
+	mtc0	zero, C0_WATCHLO	// write C0_WatchLo0
+bfc002a0:	40809000 	mtc0	zero,c0_watchlo
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:59
+
+	mtc0	a1, C0_WATCHHI, 1	// write C0_WatchHi1
+bfc002a4:	40859801 	mtc0	a1,c0_watchhi,1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:60
+	mtc0	zero, C0_WATCHLO, 1	// write C0_WatchLo1
+bfc002a8:	40809001 	mtc0	zero,c0_watchlo,1
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:62
+
+	mtc0	a1, C0_WATCHHI, 2	// write C0_WatchHi2
+bfc002ac:	40859802 	mtc0	a1,c0_watchhi,2
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:63
+	mtc0	zero, C0_WATCHLO, 2	// write C0_WatchLo2
+bfc002b0:	40809002 	mtc0	zero,c0_watchlo,2
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:65
+
+	mtc0	a1, C0_WATCHHI, 3	// write C0_WatchHi3
+bfc002b4:	40859803 	mtc0	a1,c0_watchhi,3
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:66
+	mtc0	zero, C0_WATCHLO, 3	// write C0_WatchLo3
+bfc002b8:	40809003 	mtc0	zero,c0_watchlo,3
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:68
+
+	mtc0	a1, C0_WATCHHI, 4	// write C0_WatchHi4
+bfc002bc:	40859804 	mtc0	a1,c0_watchhi,4
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:69
+	mtc0	zero, C0_WATCHLO, 4	// write C0_WatchLo4
+bfc002c0:	40809004 	mtc0	zero,c0_watchlo,4
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:71
+
+	mtc0	a1, C0_WATCHHI, 5	// write C0_WatchHi5
+bfc002c4:	40859805 	mtc0	a1,c0_watchhi,5
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:72
+	mtc0	zero, C0_WATCHLO, 5	// write C0_WatchLo5
+bfc002c8:	40809005 	mtc0	zero,c0_watchlo,5
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:74
+
+	mtc0	a1, C0_WATCHHI, 6	// write C0_WatchHi6
+bfc002cc:	40859806 	mtc0	a1,c0_watchhi,6
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:75
+	mtc0	zero, C0_WATCHLO, 6	// write C0_WatchLo6
+bfc002d0:	40809006 	mtc0	zero,c0_watchlo,6
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:77
+
+	mtc0	a1, C0_WATCHHI, 7	// write C0_WatchHi7
+bfc002d4:	40859807 	mtc0	a1,c0_watchhi,7
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:78
+	mtc0	zero, C0_WATCHLO, 7	// write C0_WatchLo7
+bfc002d8:	40809007 	mtc0	zero,c0_watchlo,7
+
+bfc002dc <done_wr>:
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:83
+
+done_wr:
+
+	// Clear WP bit to avoid watch exception upon user code entry, IV, and software interrupts.
+	mtc0	zero, C0_CAUSE		// write C0_Cause: Init AFTER init of CP0 WatchHi/Lo registers.
+bfc002dc:	40806800 	mtc0	zero,c0_cause
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:86
+
+	// Clear timer interrupt. (Count was cleared at the reset vector to allow timing boot.)
+	mtc0	zero, C0_COMPARE	// write C0_Compare
+bfc002e0:	40805800 	mtc0	zero,c0_compare
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\src\asm/init_cp0.s:88
+
+    jr      ra
+bfc002e4:	03e00008 	jr	ra
+bfc002e8:	00000000 	nop
+
+bfc002ec <Boot_Jump>:
+Boot_Jump():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:13
+//      *((__IO uint32_t *)(USER_CODERAM_START + i*4)) = *((__IO uint32_t*)(USER_FLASH_START + i*4));
+//   }
+// }
+
+void Boot_Jump( unsigned int address )
+{
+bfc002ec:	27bdffe8 	addiu	sp,sp,-24
+bfc002f0:	afbe0014 	sw	s8,20(sp)
+bfc002f4:	03a0f025 	move	s8,sp
+bfc002f8:	afc40018 	sw	a0,24(s8)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:14
+  int k = 0;
+bfc002fc:	afc00008 	sw	zero,8(s8)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:15
+  k = k + 1;
+bfc00300:	8fc20008 	lw	v0,8(s8)
+bfc00304:	24420001 	addiu	v0,v0,1
+bfc00308:	afc20008 	sw	v0,8(s8)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:16
+  __asm volatile ("j 0xbfcfc328");
+bfc0030c:	0bf3f0ca 	j	bfcfc328 <_fdata_rom+0xfbec0>
+bfc00310:	00000000 	nop
+	...
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:33
+  __asm volatile("nop");
+  __asm volatile("nop");
+
+  // 114KB /4B = 29184 Word
+  // for (uint32_t i = 0; i < (FUNCBOOT_SIZE / 4); i++) {
+  for (uint32_t i = 0; i < 512; i++) { // just for ZCD, 2KB
+bfc00344:	afc00000 	sw	zero,0(s8)
+bfc00348:	10000012 	b	bfc00394 <Boot_Jump+0xa8>
+bfc0034c:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:34 (discriminator 3)
+    *((volatile uint32_t *)(FUNCBOOT_START + i * 4)) = *((volatile uint32_t *)(FUNCBOOT_ORIGIN + i * 4));
+bfc00350:	8fc30000 	lw	v1,0(s8)
+bfc00354:	3c022ff3 	lui	v0,0x2ff3
+bfc00358:	3442f200 	ori	v0,v0,0xf200
+bfc0035c:	00621021 	addu	v0,v1,v0
+bfc00360:	00021080 	sll	v0,v0,0x2
+bfc00364:	00402025 	move	a0,v0
+bfc00368:	8fc30000 	lw	v1,0(s8)
+bfc0036c:	3c022004 	lui	v0,0x2004
+bfc00370:	34427200 	ori	v0,v0,0x7200
+bfc00374:	00621021 	addu	v0,v1,v0
+bfc00378:	00021080 	sll	v0,v0,0x2
+bfc0037c:	00401825 	move	v1,v0
+bfc00380:	8c820000 	lw	v0,0(a0)
+bfc00384:	ac620000 	sw	v0,0(v1)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:33 (discriminator 3)
+  for (uint32_t i = 0; i < 512; i++) { // just for ZCD, 2KB
+bfc00388:	8fc20000 	lw	v0,0(s8)
+bfc0038c:	24420001 	addiu	v0,v0,1
+bfc00390:	afc20000 	sw	v0,0(s8)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:33 (discriminator 1)
+bfc00394:	8fc20000 	lw	v0,0(s8)
+bfc00398:	2c420200 	sltiu	v0,v0,512
+bfc0039c:	1440ffec 	bnez	v0,bfc00350 <Boot_Jump+0x64>
+bfc003a0:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:37
+  }
+
+  *(volatile unsigned int *)BOOT_REMAP_CFG = 0;  // close flash remap
+bfc003a4:	3c028013 	lui	v0,0x8013
+bfc003a8:	34422034 	ori	v0,v0,0x2034
+bfc003ac:	ac400000 	sw	zero,0(v0)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:40
+
+  // for(uint32_t i = 0; i < (USER_SIZE / 4); i++)
+  for(uint32_t i = 0; i < 7680; i++) // just for ZCD, 30KB
+bfc003b0:	afc00004 	sw	zero,4(s8)
+bfc003b4:	10000010 	b	bfc003f8 <Boot_Jump+0x10c>
+bfc003b8:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:42 (discriminator 3)
+  {
+     *((volatile uint32_t *)(USER_CODERAM_START + i*4)) = *((volatile uint32_t*)(USER_FLASH_START + i*4));
+bfc003bc:	8fc30004 	lw	v1,4(s8)
+bfc003c0:	3c022ff0 	lui	v0,0x2ff0
+bfc003c4:	00621021 	addu	v0,v1,v0
+bfc003c8:	00021080 	sll	v0,v0,0x2
+bfc003cc:	00402025 	move	a0,v0
+bfc003d0:	8fc30004 	lw	v1,4(s8)
+bfc003d4:	3c022004 	lui	v0,0x2004
+bfc003d8:	00621021 	addu	v0,v1,v0
+bfc003dc:	00021080 	sll	v0,v0,0x2
+bfc003e0:	00401825 	move	v1,v0
+bfc003e4:	8c820000 	lw	v0,0(a0)
+bfc003e8:	ac620000 	sw	v0,0(v1)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:40 (discriminator 3)
+  for(uint32_t i = 0; i < 7680; i++) // just for ZCD, 30KB
+bfc003ec:	8fc20004 	lw	v0,4(s8)
+bfc003f0:	24420001 	addiu	v0,v0,1
+bfc003f4:	afc20004 	sw	v0,4(s8)
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:40 (discriminator 1)
+bfc003f8:	8fc20004 	lw	v0,4(s8)
+bfc003fc:	2c421e00 	sltiu	v0,v0,7680
+bfc00400:	1440ffee 	bnez	v0,bfc003bc <Boot_Jump+0xd0>
+bfc00404:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:46
+  }
+
+  // TODO sp set by funcboot itself
+  __asm volatile("j %0" : : "r"(address));
+bfc00408:	8fc20018 	lw	v0,24(s8)
+bfc0040c:	00400008 	jr	v0
+bfc00410:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:49
+  // __asm volatile("la $t0, %0" : : "r"(address));
+  // __asm volatile("jr $t0");
+}
+bfc00414:	00000000 	nop
+bfc00418:	03c0e825 	move	sp,s8
+bfc0041c:	8fbe0014 	lw	s8,20(sp)
+bfc00420:	27bd0018 	addiu	sp,sp,24
+bfc00424:	03e00008 	jr	ra
+bfc00428:	00000000 	nop
+
+bfc0042c <main>:
+main():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:51
+
+int main(void) {
+bfc0042c:	27bdffe8 	addiu	sp,sp,-24
+bfc00430:	afbf0014 	sw	ra,20(sp)
+bfc00434:	afbe0010 	sw	s8,16(sp)
+bfc00438:	03a0f025 	move	s8,sp
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:56
+  // __disable_irq();
+  // mips32_bicsr(SR_BEV);
+  // mips32_bissr(SR_IE | SR_HINT0 | SR_HINT1);
+
+  Boot_Jump(FUNCBOOT_START);
+bfc0043c:	3c028011 	lui	v0,0x8011
+bfc00440:	3444c800 	ori	a0,v0,0xc800
+bfc00444:	0ff000bb 	jal	bfc002ec <Boot_Jump>
+bfc00448:	00000000 	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:58
+
+  return 0;
+bfc0044c:	00001025 	move	v0,zero
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\MIPS\rootboot/rootboot.c:59
+}
+bfc00450:	03c0e825 	move	sp,s8
+bfc00454:	8fbf0014 	lw	ra,20(sp)
+bfc00458:	8fbe0010 	lw	s8,16(sp)
+bfc0045c:	27bd0018 	addiu	sp,sp,24
+bfc00460:	03e00008 	jr	ra
+bfc00464:	00000000 	nop

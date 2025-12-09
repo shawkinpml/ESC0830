@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "CrossAll",
+            // "defines": ["TARGET_MIPS"], // just for lzz check regs addr, not suit for 3in1 project
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/common/include/**",
+                "${workspaceFolder}/common/include/plic/**",
+                "${workspaceFolder}/ARM/include/**",
+                "${workspaceFolder}/MIPS/include/**",
+                "${workspaceFolder}/RISCV/include/**"
+            ],
+            "cStandard": "c11"
+        }
+    ],
+    "version": 4
+}

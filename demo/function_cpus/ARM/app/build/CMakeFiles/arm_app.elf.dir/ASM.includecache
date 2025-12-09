@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/HJJ/Career/MimicMCU/demo/function_cpus/ARM/src/gen.S
+
+C:/HJJ/Career/MimicMCU/demo/function_cpus/ARM/src/startup_helper.S
+

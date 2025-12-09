@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/encoding.h
+
+C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/src/gen.S
+
+C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/src/startup.S
+encoding.h
+C:/HJJ/Career/MimicMCU/demo/function_cpus/RISCV/src/encoding.h
+

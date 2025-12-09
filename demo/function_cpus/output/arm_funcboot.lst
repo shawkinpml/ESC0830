@@ -1,0 +1,1013 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x11c800
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          146156 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         4
+  Size of section headers:           40 (bytes)
+  Number of section headers:         22
+  Section header string table index: 21
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        0011c800 00c800 0004d0 00  AX  0   0  4
+  [ 2] .ctors            PROGBITS        0011ccd0 010010 000000 00   W  0   0  1
+  [ 3] .dtors            PROGBITS        0011ccd0 010010 000000 00   W  0   0  1
+  [ 4] .fastcode         PROGBITS        00120000 010010 000000 00   W  0   0  1
+  [ 5] .data             PROGBITS        00120000 010000 000010 00  WA  0   0  4
+  [ 6] .bss              NOBITS          00120010 010010 000004 00  WA  0   0  4
+  [ 7] .heaparea         NOBITS          00120014 010014 000c04 00  WA  0   0  4
+  [ 8] .stackarea        NOBITS          00120c18 010c18 000400 00  WA  0   0  4
+  [ 9] .debug_aranges    PROGBITS        00000000 010010 0000f0 00      0   0  1
+  [10] .debug_info       PROGBITS        00000000 010100 000a6a 00      0   0  1
+  [11] .debug_abbrev     PROGBITS        00000000 010b6a 00040b 00      0   0  1
+  [12] .debug_line       PROGBITS        00000000 010f75 0011c4 00      0   0  1
+  [13] .debug_frame      PROGBITS        00000000 01213c 0002d4 00      0   0  4
+  [14] .debug_str        PROGBITS        00000000 012410 00d0ba 01  MS  0   0  1
+  [15] .debug_ranges     PROGBITS        00000000 01f4ca 0000c0 00      0   0  1
+  [16] .debug_macro      PROGBITS        00000000 01f58a 003ac5 00      0   0  1
+  [17] .comment          PROGBITS        00000000 02304f 000049 01  MS  0   0  1
+  [18] .ARM.attributes   ARM_ATTRIBUTES  00000000 023098 00002d 00      0   0  1
+  [19] .symtab           SYMTAB          00000000 0230c8 0006e0 10     20  65  4
+  [20] .strtab           STRTAB          00000000 0237a8 000269 00      0   0  1
+  [21] .shstrtab         STRTAB          00000000 023a11 0000da 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  y (purecode), p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x000000 0x00110000 0x00110000 0x0ccd0 0x0ccd0 R E 0x10000
+  LOAD           0x010000 0x00120000 0x0011ccd0 0x00010 0x00014 RW  0x10000
+  LOAD           0x000014 0x00120014 0x0011cce0 0x00000 0x00c04 RW  0x10000
+  LOAD           0x000c18 0x00120c18 0x0011cce0 0x00000 0x00400 RW  0x10000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text 
+   01     .data .bss 
+   02     .heaparea 
+   03     .stackarea 
+
+arm_funcboot.elf:     file format elf32-littlearm
+arm_funcboot.elf
+architecture: armv7, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x0011c800
+
+Program Header:
+    LOAD off    0x00000000 vaddr 0x00110000 paddr 0x00110000 align 2**16
+         filesz 0x0000ccd0 memsz 0x0000ccd0 flags r-x
+    LOAD off    0x00010000 vaddr 0x00120000 paddr 0x0011ccd0 align 2**16
+         filesz 0x00000010 memsz 0x00000014 flags rw-
+    LOAD off    0x00000014 vaddr 0x00120014 paddr 0x0011cce0 align 2**16
+         filesz 0x00000000 memsz 0x00000c04 flags rw-
+    LOAD off    0x00000c18 vaddr 0x00120c18 paddr 0x0011cce0 align 2**16
+         filesz 0x00000000 memsz 0x00000400 flags rw-
+private flags = 0x5000200: [Version5 EABI] [soft-float ABI]
+
+Sections:
+Idx Name            Size      VMA       LMA       File off  Algn  Flags
+  0 .text           000004d0  0011c800  0011c800  0000c800  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .ctors          00000000  0011ccd0  0011ccd0  00010010  2**0  CONTENTS
+  2 .dtors          00000000  0011ccd0  0011ccd0  00010010  2**0  CONTENTS
+  3 .fastcode       00000000  00120000  00120000  00010010  2**0  CONTENTS
+  4 .data           00000010  00120000  0011ccd0  00010000  2**2  CONTENTS, ALLOC, LOAD, DATA
+  5 .bss            00000004  00120010  0011cce0  00010010  2**2  ALLOC
+  6 .heaparea       00000c04  00120014  0011cce0  00010014  2**2  ALLOC
+  7 .stackarea      00000400  00120c18  0011cce0  00010c18  2**2  ALLOC
+  8 .debug_aranges  000000f0  00000000  00000000  00010010  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_info     00000a6a  00000000  00000000  00010100  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_abbrev   0000040b  00000000  00000000  00010b6a  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_line     000011c4  00000000  00000000  00010f75  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_frame    000002d4  00000000  00000000  0001213c  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .debug_str      0000d0ba  00000000  00000000  00012410  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_ranges   000000c0  00000000  00000000  0001f4ca  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .debug_macro    00003ac5  00000000  00000000  0001f58a  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .comment        00000049  00000000  00000000  0002304f  2**0  CONTENTS, READONLY
+ 17 .ARM.attributes 0000002d  00000000  00000000  00023098  2**0  CONTENTS, READONLY
+SYMBOL TABLE:
+0011c800 l    d  .text	00000000 .text
+0011ccd0 l    d  .ctors	00000000 .ctors
+0011ccd0 l    d  .dtors	00000000 .dtors
+00120000 l    d  .fastcode	00000000 .fastcode
+00120000 l    d  .data	00000000 .data
+00120010 l    d  .bss	00000000 .bss
+00120014 l    d  .heaparea	00000000 .heaparea
+00120c18 l    d  .stackarea	00000000 .stackarea
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    df *ABS*	00000000 startup_HM3S9B96_IT.c
+00000000 l    df *ABS*	00000000 system_HM3S9B96_hc.c
+0011cc40 l     F .text	0000000e __enable_irq
+00000000 l    df *ABS*	00000000 funcboot.c
+0011cc66 l     F .text	0000000e __disable_irq
+0011cb90 g     F .text	0000003c DebugMon_Handler
+0011ca90 g     F .text	00000034 HardFault_Handler
+0011cc0c g     F .text	00000034 SysTick_Handler
+0011ccd0 g       *ABS*	00000000 _sidata
+0011cbcc g     F .text	00000040 PendSV_Handler
+0011ca60 g     F .text	00000030 NMI_Handler
+0011ccd0 g       .dtors	00000000 _etext
+00120018 g       .heaparea	00000000 _sheap
+00120010 g       .bss	00000000 _sbss
+00120000 g     O .data	00000004 SystemCoreClock
+0011cb24 g     F .text	0000003c UsageFault_Handler
+00120000 g       .data	00000000 _sdata
+00120014 g       .bss	00000000 _ebss
+0011c944 g     F .text	000000a8 Reset_Handler
+0012000c g     O .data	00000004 USBClock
+0011cc74 g     F .text	0000001a Jump_App
+0011ca0c g     F .text	00000054 uart_init
+00120010 g     O .bss	00000004 jump2app
+0011c9ec g     F .text	00000006 Default_Handler
+00120004 g     O .data	00000004 PeripheralClock
+0011cc8e g     F .text	0000000c save_context_handler
+00120000 g       .fastcode	00000000 _efastcode
+0011cac4 g     F .text	00000030 MemManage_Handler
+0011cca8 g     F .text	00000028 main
+00120c18 g     O .stackarea	00000400 pulStack
+0011cb60 g     F .text	00000030 SVC_Handler
+0011cc5a g     F .text	0000000c SystemInit
+00120c18 g       .stackarea	00000000 _sstack
+0012c000 g       .stackarea	00000000 __StackTop
+0011c9f2 g     F .text	0000001a write_address
+0011c9ec  w    F .text	00000006 Default_IRQHandler
+0011ccd0 g       .dtors	00000000 _sifastcode
+00120000 g       .fastcode	00000000 _sfastcode
+00121018 g       .stackarea	00000000 _estack
+0012c000 g       *ABS*	00000000 __stack
+0011cc9a g     F .text	0000000e plic_handler
+00120c18 g       .heaparea	00000000 _eheap
+00120010 g       .data	00000000 _edata
+00121018 g       .stackarea	00000000 _end
+0012bc00 g       *ABS*	00000000 __StackLimit
+0011c800 g     O .text	00000144 g_pfnVectors
+0011cc4e g     F .text	0000000c SystemCoreClockUpdate
+00120008 g     O .data	00000004 EMCClock
+0011caf4 g     F .text	00000030 BusFault_Handler
+00120018 g     O .heaparea	00000c00 pulHeap
+
+
+
+Disassembly of section .text:
+
+0011c800 <g_pfnVectors>:
+  11c800:	00 c0 12 00 45 c9 11 00 61 ca 11 00 91 ca 11 00     ....E...a.......
+  11c810:	c5 ca 11 00 f5 ca 11 00 25 cb 11 00 00 00 00 00     ........%.......
+	...
+  11c82c:	61 cb 11 00 91 cb 11 00 00 00 00 00 cd cb 11 00     a...............
+  11c83c:	0d cc 11 00 8f cc 11 00 9b cc 11 00 ed c9 11 00     ................
+  11c84c:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c85c:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c86c:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c87c:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c88c:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c89c:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c8ac:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c8bc:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c8cc:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c8dc:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c8ec:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c8fc:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c90c:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c91c:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c92c:	ed c9 11 00 ed c9 11 00 ed c9 11 00 ed c9 11 00     ................
+  11c93c:	ed c9 11 00 ed c9 11 00                             ........
+
+0011c944 <Reset_Handler>:
+Reset_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:204
+* Return         :
+*******************************************************************************/
+#define APP_EXIT				 (*(volatile unsigned long *)0x20094100)
+
+void Reset_Handler(void)
+{
+  11c944:	4668      	mov	r0, sp
+  11c946:	f020 0107 	bic.w	r1, r0, #7
+  11c94a:	468d      	mov	sp, r1
+  11c94c:	b581      	push	{r0, r7, lr}
+  11c94e:	b085      	sub	sp, #20
+  11c950:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:205
+	SystemInit();
+  11c952:	f000 f982 	bl	11cc5a <SystemInit>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:208
+	uint32_t *pulDest;
+    uint32_t *pulSrc;
+	uint32_t temp=0;
+  11c956:	2300      	movs	r3, #0
+  11c958:	607b      	str	r3, [r7, #4]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:213
+    //
+    // Copy the data segment initializers from flash to SRAM in ROM mode
+    //
+
+    if (&_sidata != &_sdata) {	// only if needed
+  11c95a:	4a1c      	ldr	r2, [pc, #112]	; (11c9cc <Reset_Handler+0x88>)
+  11c95c:	4b1c      	ldr	r3, [pc, #112]	; (11c9d0 <Reset_Handler+0x8c>)
+  11c95e:	429a      	cmp	r2, r3
+  11c960:	d010      	beq.n	11c984 <Reset_Handler+0x40>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:214
+		pulSrc = &_sidata;
+  11c962:	4b1a      	ldr	r3, [pc, #104]	; (11c9cc <Reset_Handler+0x88>)
+  11c964:	60bb      	str	r3, [r7, #8]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:215
+		for(pulDest = &_sdata; pulDest < &_edata; ) {
+  11c966:	4b1a      	ldr	r3, [pc, #104]	; (11c9d0 <Reset_Handler+0x8c>)
+  11c968:	60fb      	str	r3, [r7, #12]
+  11c96a:	e007      	b.n	11c97c <Reset_Handler+0x38>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:216
+			*(pulDest++) = *(pulSrc++);
+  11c96c:	68ba      	ldr	r2, [r7, #8]
+  11c96e:	1d13      	adds	r3, r2, #4
+  11c970:	60bb      	str	r3, [r7, #8]
+  11c972:	68fb      	ldr	r3, [r7, #12]
+  11c974:	1d19      	adds	r1, r3, #4
+  11c976:	60f9      	str	r1, [r7, #12]
+  11c978:	6812      	ldr	r2, [r2, #0]
+  11c97a:	601a      	str	r2, [r3, #0]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:215 (discriminator 1)
+		for(pulDest = &_sdata; pulDest < &_edata; ) {
+  11c97c:	68fb      	ldr	r3, [r7, #12]
+  11c97e:	4a15      	ldr	r2, [pc, #84]	; (11c9d4 <Reset_Handler+0x90>)
+  11c980:	4293      	cmp	r3, r2
+  11c982:	d3f3      	bcc.n	11c96c <Reset_Handler+0x28>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:222
+		}
+    }
+
+    // Copy the .fastcode code from ROM to SRAM
+
+    if (&_sifastcode != &_sfastcode) {	// only if needed
+  11c984:	4a14      	ldr	r2, [pc, #80]	; (11c9d8 <Reset_Handler+0x94>)
+  11c986:	4b15      	ldr	r3, [pc, #84]	; (11c9dc <Reset_Handler+0x98>)
+  11c988:	429a      	cmp	r2, r3
+  11c98a:	d010      	beq.n	11c9ae <Reset_Handler+0x6a>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:223
+    	pulSrc = &_sifastcode;
+  11c98c:	4b12      	ldr	r3, [pc, #72]	; (11c9d8 <Reset_Handler+0x94>)
+  11c98e:	60bb      	str	r3, [r7, #8]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:224
+		for(pulDest = &_sfastcode; pulDest < &_efastcode; ) {
+  11c990:	4b12      	ldr	r3, [pc, #72]	; (11c9dc <Reset_Handler+0x98>)
+  11c992:	60fb      	str	r3, [r7, #12]
+  11c994:	e007      	b.n	11c9a6 <Reset_Handler+0x62>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:225
+			*(pulDest++) = *(pulSrc++);
+  11c996:	68ba      	ldr	r2, [r7, #8]
+  11c998:	1d13      	adds	r3, r2, #4
+  11c99a:	60bb      	str	r3, [r7, #8]
+  11c99c:	68fb      	ldr	r3, [r7, #12]
+  11c99e:	1d19      	adds	r1, r3, #4
+  11c9a0:	60f9      	str	r1, [r7, #12]
+  11c9a2:	6812      	ldr	r2, [r2, #0]
+  11c9a4:	601a      	str	r2, [r3, #0]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:224 (discriminator 1)
+		for(pulDest = &_sfastcode; pulDest < &_efastcode; ) {
+  11c9a6:	68fb      	ldr	r3, [r7, #12]
+  11c9a8:	4a0d      	ldr	r2, [pc, #52]	; (11c9e0 <Reset_Handler+0x9c>)
+  11c9aa:	4293      	cmp	r3, r2
+  11c9ac:	d3f3      	bcc.n	11c996 <Reset_Handler+0x52>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:232
+    }
+	
+    //
+    // Zero fill the bss segment.
+    //
+    for(pulDest = &_sbss; pulDest < &_ebss; )
+  11c9ae:	4b0d      	ldr	r3, [pc, #52]	; (11c9e4 <Reset_Handler+0xa0>)
+  11c9b0:	60fb      	str	r3, [r7, #12]
+  11c9b2:	e004      	b.n	11c9be <Reset_Handler+0x7a>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:234
+    {
+        *(pulDest++) = 0;
+  11c9b4:	68fb      	ldr	r3, [r7, #12]
+  11c9b6:	1d1a      	adds	r2, r3, #4
+  11c9b8:	60fa      	str	r2, [r7, #12]
+  11c9ba:	2200      	movs	r2, #0
+  11c9bc:	601a      	str	r2, [r3, #0]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:232 (discriminator 1)
+    for(pulDest = &_sbss; pulDest < &_ebss; )
+  11c9be:	68fb      	ldr	r3, [r7, #12]
+  11c9c0:	4a09      	ldr	r2, [pc, #36]	; (11c9e8 <Reset_Handler+0xa4>)
+  11c9c2:	4293      	cmp	r3, r2
+  11c9c4:	d3f6      	bcc.n	11c9b4 <Reset_Handler+0x70>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:240
+    }
+
+    //
+    // Call the application's entry point.
+    //
+    main();
+  11c9c6:	f000 f96f 	bl	11cca8 <main>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:247 (discriminator 1)
+    //
+    // exit TODO will goto Default_Handler
+    //	
+	// temp = APP_EXIT;
+	// APP_EXIT = 0x80000000;
+	while(1);
+  11c9ca:	e7fe      	b.n	11c9ca <Reset_Handler+0x86>
+  11c9cc:	0011ccd0 	.word	0x0011ccd0
+  11c9d0:	00120000 	.word	0x00120000
+  11c9d4:	00120010 	.word	0x00120010
+  11c9d8:	0011ccd0 	.word	0x0011ccd0
+  11c9dc:	00120000 	.word	0x00120000
+  11c9e0:	00120000 	.word	0x00120000
+  11c9e4:	00120010 	.word	0x00120010
+  11c9e8:	00120014 	.word	0x00120014
+
+0011c9ec <Default_Handler>:
+Default_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:278
+// This is the code that gets called when the processor receives an unexpected
+// interrupt.  This simply enters an infinite loop, preserving the system state
+// for examination by a debugger.
+//
+//*****************************************************************************
+void Default_Handler(void) {
+  11c9ec:	b480      	push	{r7}
+  11c9ee:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:281 (discriminator 1)
+	// Go into an infinite loop.
+	//
+	while (1) {
+  11c9f0:	e7fe      	b.n	11c9f0 <Default_Handler+0x4>
+
+0011c9f2 <write_address>:
+write_address():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:287
+		// uart_printf("system error! \r\n");
+	}
+}
+
+void write_address(int addr, int val)
+{
+  11c9f2:	b480      	push	{r7}
+  11c9f4:	b083      	sub	sp, #12
+  11c9f6:	af00      	add	r7, sp, #0
+  11c9f8:	6078      	str	r0, [r7, #4]
+  11c9fa:	6039      	str	r1, [r7, #0]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:288
+    *(volatile int *)addr = val;
+  11c9fc:	687b      	ldr	r3, [r7, #4]
+  11c9fe:	683a      	ldr	r2, [r7, #0]
+  11ca00:	601a      	str	r2, [r3, #0]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:289
+	return;
+  11ca02:	bf00      	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:290
+}
+  11ca04:	370c      	adds	r7, #12
+  11ca06:	46bd      	mov	sp, r7
+  11ca08:	bc80      	pop	{r7}
+  11ca0a:	4770      	bx	lr
+
+0011ca0c <uart_init>:
+uart_init():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:293
+#define uart_putchar(data) { HM_UART0->TFIFO = (data);}
+
+void uart_init(){
+  11ca0c:	b580      	push	{r7, lr}
+  11ca0e:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:294
+    write_address(0x4000c018, 0x01);
+  11ca10:	2101      	movs	r1, #1
+  11ca12:	480d      	ldr	r0, [pc, #52]	; (11ca48 <uart_init+0x3c>)
+  11ca14:	f7ff ffed 	bl	11c9f2 <write_address>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:295
+    write_address(0x4000c034, 0x44);
+  11ca18:	2144      	movs	r1, #68	; 0x44
+  11ca1a:	480c      	ldr	r0, [pc, #48]	; (11ca4c <uart_init+0x40>)
+  11ca1c:	f7ff ffe9 	bl	11c9f2 <write_address>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:296
+    write_address(0x4000c004, 0x1020);
+  11ca20:	f44f 5181 	mov.w	r1, #4128	; 0x1020
+  11ca24:	480a      	ldr	r0, [pc, #40]	; (11ca50 <uart_init+0x44>)
+  11ca26:	f7ff ffe4 	bl	11c9f2 <write_address>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:297
+    write_address(0x4000c000, 0x17);
+  11ca2a:	2117      	movs	r1, #23
+  11ca2c:	4809      	ldr	r0, [pc, #36]	; (11ca54 <uart_init+0x48>)
+  11ca2e:	f7ff ffe0 	bl	11c9f2 <write_address>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:298
+    write_address(0x4000c008, 0x01);
+  11ca32:	2101      	movs	r1, #1
+  11ca34:	4808      	ldr	r0, [pc, #32]	; (11ca58 <uart_init+0x4c>)
+  11ca36:	f7ff ffdc 	bl	11c9f2 <write_address>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:299
+    write_address(0x4000c044, 0x40);
+  11ca3a:	2140      	movs	r1, #64	; 0x40
+  11ca3c:	4807      	ldr	r0, [pc, #28]	; (11ca5c <uart_init+0x50>)
+  11ca3e:	f7ff ffd8 	bl	11c9f2 <write_address>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:300
+}
+  11ca42:	bf00      	nop
+  11ca44:	bd80      	pop	{r7, pc}
+  11ca46:	bf00      	nop
+  11ca48:	4000c018 	.word	0x4000c018
+  11ca4c:	4000c034 	.word	0x4000c034
+  11ca50:	4000c004 	.word	0x4000c004
+  11ca54:	4000c000 	.word	0x4000c000
+  11ca58:	4000c008 	.word	0x4000c008
+  11ca5c:	4000c044 	.word	0x4000c044
+
+0011ca60 <NMI_Handler>:
+NMI_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:302
+
+void NMI_Handler(void) {
+  11ca60:	b480      	push	{r7}
+  11ca62:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:303
+    uart_putchar('N');
+  11ca64:	4b09      	ldr	r3, [pc, #36]	; (11ca8c <NMI_Handler+0x2c>)
+  11ca66:	224e      	movs	r2, #78	; 0x4e
+  11ca68:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:304
+    uart_putchar('M');
+  11ca6a:	4b08      	ldr	r3, [pc, #32]	; (11ca8c <NMI_Handler+0x2c>)
+  11ca6c:	224d      	movs	r2, #77	; 0x4d
+  11ca6e:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:305
+    uart_putchar('I');
+  11ca70:	4b06      	ldr	r3, [pc, #24]	; (11ca8c <NMI_Handler+0x2c>)
+  11ca72:	2249      	movs	r2, #73	; 0x49
+  11ca74:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:306
+    uart_putchar('\r');
+  11ca76:	4b05      	ldr	r3, [pc, #20]	; (11ca8c <NMI_Handler+0x2c>)
+  11ca78:	220d      	movs	r2, #13
+  11ca7a:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:307
+    uart_putchar('\n');
+  11ca7c:	4b03      	ldr	r3, [pc, #12]	; (11ca8c <NMI_Handler+0x2c>)
+  11ca7e:	220a      	movs	r2, #10
+  11ca80:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:308
+}
+  11ca82:	bf00      	nop
+  11ca84:	46bd      	mov	sp, r7
+  11ca86:	bc80      	pop	{r7}
+  11ca88:	4770      	bx	lr
+  11ca8a:	bf00      	nop
+  11ca8c:	4000c000 	.word	0x4000c000
+
+0011ca90 <HardFault_Handler>:
+HardFault_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:309
+void HardFault_Handler(void) {
+  11ca90:	b480      	push	{r7}
+  11ca92:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:310
+    uart_putchar('H');
+  11ca94:	4b0a      	ldr	r3, [pc, #40]	; (11cac0 <HardFault_Handler+0x30>)
+  11ca96:	2248      	movs	r2, #72	; 0x48
+  11ca98:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:311
+    uart_putchar('a');
+  11ca9a:	4b09      	ldr	r3, [pc, #36]	; (11cac0 <HardFault_Handler+0x30>)
+  11ca9c:	2261      	movs	r2, #97	; 0x61
+  11ca9e:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:312
+    uart_putchar('r');
+  11caa0:	4b07      	ldr	r3, [pc, #28]	; (11cac0 <HardFault_Handler+0x30>)
+  11caa2:	2272      	movs	r2, #114	; 0x72
+  11caa4:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:313
+    uart_putchar('d');
+  11caa6:	4b06      	ldr	r3, [pc, #24]	; (11cac0 <HardFault_Handler+0x30>)
+  11caa8:	2264      	movs	r2, #100	; 0x64
+  11caaa:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:314
+    uart_putchar('\r');
+  11caac:	4b04      	ldr	r3, [pc, #16]	; (11cac0 <HardFault_Handler+0x30>)
+  11caae:	220d      	movs	r2, #13
+  11cab0:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:315
+    uart_putchar('\n');
+  11cab2:	4b03      	ldr	r3, [pc, #12]	; (11cac0 <HardFault_Handler+0x30>)
+  11cab4:	220a      	movs	r2, #10
+  11cab6:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:316
+}
+  11cab8:	bf00      	nop
+  11caba:	46bd      	mov	sp, r7
+  11cabc:	bc80      	pop	{r7}
+  11cabe:	4770      	bx	lr
+  11cac0:	4000c000 	.word	0x4000c000
+
+0011cac4 <MemManage_Handler>:
+MemManage_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:317
+void MemManage_Handler(void) {
+  11cac4:	b480      	push	{r7}
+  11cac6:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:318
+    uart_putchar('M');
+  11cac8:	4b09      	ldr	r3, [pc, #36]	; (11caf0 <MemManage_Handler+0x2c>)
+  11caca:	224d      	movs	r2, #77	; 0x4d
+  11cacc:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:319
+    uart_putchar('e');
+  11cace:	4b08      	ldr	r3, [pc, #32]	; (11caf0 <MemManage_Handler+0x2c>)
+  11cad0:	2265      	movs	r2, #101	; 0x65
+  11cad2:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:320
+    uart_putchar('m');
+  11cad4:	4b06      	ldr	r3, [pc, #24]	; (11caf0 <MemManage_Handler+0x2c>)
+  11cad6:	226d      	movs	r2, #109	; 0x6d
+  11cad8:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:321
+    uart_putchar('\r');
+  11cada:	4b05      	ldr	r3, [pc, #20]	; (11caf0 <MemManage_Handler+0x2c>)
+  11cadc:	220d      	movs	r2, #13
+  11cade:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:322
+    uart_putchar('\n');
+  11cae0:	4b03      	ldr	r3, [pc, #12]	; (11caf0 <MemManage_Handler+0x2c>)
+  11cae2:	220a      	movs	r2, #10
+  11cae4:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:323
+}
+  11cae6:	bf00      	nop
+  11cae8:	46bd      	mov	sp, r7
+  11caea:	bc80      	pop	{r7}
+  11caec:	4770      	bx	lr
+  11caee:	bf00      	nop
+  11caf0:	4000c000 	.word	0x4000c000
+
+0011caf4 <BusFault_Handler>:
+BusFault_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:324
+void BusFault_Handler(void) {
+  11caf4:	b480      	push	{r7}
+  11caf6:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:325
+    uart_putchar('B');
+  11caf8:	4b09      	ldr	r3, [pc, #36]	; (11cb20 <BusFault_Handler+0x2c>)
+  11cafa:	2242      	movs	r2, #66	; 0x42
+  11cafc:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:326
+    uart_putchar('u');
+  11cafe:	4b08      	ldr	r3, [pc, #32]	; (11cb20 <BusFault_Handler+0x2c>)
+  11cb00:	2275      	movs	r2, #117	; 0x75
+  11cb02:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:327
+    uart_putchar('s');
+  11cb04:	4b06      	ldr	r3, [pc, #24]	; (11cb20 <BusFault_Handler+0x2c>)
+  11cb06:	2273      	movs	r2, #115	; 0x73
+  11cb08:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:328
+    uart_putchar('\r');
+  11cb0a:	4b05      	ldr	r3, [pc, #20]	; (11cb20 <BusFault_Handler+0x2c>)
+  11cb0c:	220d      	movs	r2, #13
+  11cb0e:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:329
+    uart_putchar('\n');
+  11cb10:	4b03      	ldr	r3, [pc, #12]	; (11cb20 <BusFault_Handler+0x2c>)
+  11cb12:	220a      	movs	r2, #10
+  11cb14:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:330
+}
+  11cb16:	bf00      	nop
+  11cb18:	46bd      	mov	sp, r7
+  11cb1a:	bc80      	pop	{r7}
+  11cb1c:	4770      	bx	lr
+  11cb1e:	bf00      	nop
+  11cb20:	4000c000 	.word	0x4000c000
+
+0011cb24 <UsageFault_Handler>:
+UsageFault_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:331
+void UsageFault_Handler(void) {
+  11cb24:	b480      	push	{r7}
+  11cb26:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:332
+    uart_putchar('U');
+  11cb28:	4b0c      	ldr	r3, [pc, #48]	; (11cb5c <UsageFault_Handler+0x38>)
+  11cb2a:	2255      	movs	r2, #85	; 0x55
+  11cb2c:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:333
+    uart_putchar('s');
+  11cb2e:	4b0b      	ldr	r3, [pc, #44]	; (11cb5c <UsageFault_Handler+0x38>)
+  11cb30:	2273      	movs	r2, #115	; 0x73
+  11cb32:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:334
+    uart_putchar('a');
+  11cb34:	4b09      	ldr	r3, [pc, #36]	; (11cb5c <UsageFault_Handler+0x38>)
+  11cb36:	2261      	movs	r2, #97	; 0x61
+  11cb38:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:335
+    uart_putchar('g');
+  11cb3a:	4b08      	ldr	r3, [pc, #32]	; (11cb5c <UsageFault_Handler+0x38>)
+  11cb3c:	2267      	movs	r2, #103	; 0x67
+  11cb3e:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:336
+    uart_putchar('e');
+  11cb40:	4b06      	ldr	r3, [pc, #24]	; (11cb5c <UsageFault_Handler+0x38>)
+  11cb42:	2265      	movs	r2, #101	; 0x65
+  11cb44:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:337
+    uart_putchar('\r');
+  11cb46:	4b05      	ldr	r3, [pc, #20]	; (11cb5c <UsageFault_Handler+0x38>)
+  11cb48:	220d      	movs	r2, #13
+  11cb4a:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:338
+    uart_putchar('\n');
+  11cb4c:	4b03      	ldr	r3, [pc, #12]	; (11cb5c <UsageFault_Handler+0x38>)
+  11cb4e:	220a      	movs	r2, #10
+  11cb50:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:339
+}
+  11cb52:	bf00      	nop
+  11cb54:	46bd      	mov	sp, r7
+  11cb56:	bc80      	pop	{r7}
+  11cb58:	4770      	bx	lr
+  11cb5a:	bf00      	nop
+  11cb5c:	4000c000 	.word	0x4000c000
+
+0011cb60 <SVC_Handler>:
+SVC_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:340
+void SVC_Handler(void){
+  11cb60:	b480      	push	{r7}
+  11cb62:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:341
+    uart_putchar('S');
+  11cb64:	4b09      	ldr	r3, [pc, #36]	; (11cb8c <SVC_Handler+0x2c>)
+  11cb66:	2253      	movs	r2, #83	; 0x53
+  11cb68:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:342
+    uart_putchar('V');
+  11cb6a:	4b08      	ldr	r3, [pc, #32]	; (11cb8c <SVC_Handler+0x2c>)
+  11cb6c:	2256      	movs	r2, #86	; 0x56
+  11cb6e:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:343
+    uart_putchar('C');
+  11cb70:	4b06      	ldr	r3, [pc, #24]	; (11cb8c <SVC_Handler+0x2c>)
+  11cb72:	2243      	movs	r2, #67	; 0x43
+  11cb74:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:344
+    uart_putchar('\r');
+  11cb76:	4b05      	ldr	r3, [pc, #20]	; (11cb8c <SVC_Handler+0x2c>)
+  11cb78:	220d      	movs	r2, #13
+  11cb7a:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:345
+    uart_putchar('\n');
+  11cb7c:	4b03      	ldr	r3, [pc, #12]	; (11cb8c <SVC_Handler+0x2c>)
+  11cb7e:	220a      	movs	r2, #10
+  11cb80:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:346
+}      
+  11cb82:	bf00      	nop
+  11cb84:	46bd      	mov	sp, r7
+  11cb86:	bc80      	pop	{r7}
+  11cb88:	4770      	bx	lr
+  11cb8a:	bf00      	nop
+  11cb8c:	4000c000 	.word	0x4000c000
+
+0011cb90 <DebugMon_Handler>:
+DebugMon_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:347
+void DebugMon_Handler(void){
+  11cb90:	b480      	push	{r7}
+  11cb92:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:348
+    uart_putchar('D');
+  11cb94:	4b0c      	ldr	r3, [pc, #48]	; (11cbc8 <DebugMon_Handler+0x38>)
+  11cb96:	2244      	movs	r2, #68	; 0x44
+  11cb98:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:349
+    uart_putchar('e');
+  11cb9a:	4b0b      	ldr	r3, [pc, #44]	; (11cbc8 <DebugMon_Handler+0x38>)
+  11cb9c:	2265      	movs	r2, #101	; 0x65
+  11cb9e:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:350
+    uart_putchar('b');
+  11cba0:	4b09      	ldr	r3, [pc, #36]	; (11cbc8 <DebugMon_Handler+0x38>)
+  11cba2:	2262      	movs	r2, #98	; 0x62
+  11cba4:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:351
+    uart_putchar('u');
+  11cba6:	4b08      	ldr	r3, [pc, #32]	; (11cbc8 <DebugMon_Handler+0x38>)
+  11cba8:	2275      	movs	r2, #117	; 0x75
+  11cbaa:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:352
+    uart_putchar('g');
+  11cbac:	4b06      	ldr	r3, [pc, #24]	; (11cbc8 <DebugMon_Handler+0x38>)
+  11cbae:	2267      	movs	r2, #103	; 0x67
+  11cbb0:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:353
+    uart_putchar('\r');
+  11cbb2:	4b05      	ldr	r3, [pc, #20]	; (11cbc8 <DebugMon_Handler+0x38>)
+  11cbb4:	220d      	movs	r2, #13
+  11cbb6:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:354
+    uart_putchar('\n');
+  11cbb8:	4b03      	ldr	r3, [pc, #12]	; (11cbc8 <DebugMon_Handler+0x38>)
+  11cbba:	220a      	movs	r2, #10
+  11cbbc:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:355
+}
+  11cbbe:	bf00      	nop
+  11cbc0:	46bd      	mov	sp, r7
+  11cbc2:	bc80      	pop	{r7}
+  11cbc4:	4770      	bx	lr
+  11cbc6:	bf00      	nop
+  11cbc8:	4000c000 	.word	0x4000c000
+
+0011cbcc <PendSV_Handler>:
+PendSV_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:356
+void PendSV_Handler(void){
+  11cbcc:	b480      	push	{r7}
+  11cbce:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:357
+    uart_putchar('P');
+  11cbd0:	4b0d      	ldr	r3, [pc, #52]	; (11cc08 <PendSV_Handler+0x3c>)
+  11cbd2:	2250      	movs	r2, #80	; 0x50
+  11cbd4:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:358
+    uart_putchar('e');
+  11cbd6:	4b0c      	ldr	r3, [pc, #48]	; (11cc08 <PendSV_Handler+0x3c>)
+  11cbd8:	2265      	movs	r2, #101	; 0x65
+  11cbda:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:359
+    uart_putchar('n');
+  11cbdc:	4b0a      	ldr	r3, [pc, #40]	; (11cc08 <PendSV_Handler+0x3c>)
+  11cbde:	226e      	movs	r2, #110	; 0x6e
+  11cbe0:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:360
+    uart_putchar('d');
+  11cbe2:	4b09      	ldr	r3, [pc, #36]	; (11cc08 <PendSV_Handler+0x3c>)
+  11cbe4:	2264      	movs	r2, #100	; 0x64
+  11cbe6:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:361
+    uart_putchar('S');
+  11cbe8:	4b07      	ldr	r3, [pc, #28]	; (11cc08 <PendSV_Handler+0x3c>)
+  11cbea:	2253      	movs	r2, #83	; 0x53
+  11cbec:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:362
+    uart_putchar('V');
+  11cbee:	4b06      	ldr	r3, [pc, #24]	; (11cc08 <PendSV_Handler+0x3c>)
+  11cbf0:	2256      	movs	r2, #86	; 0x56
+  11cbf2:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:363
+    uart_putchar('\r');
+  11cbf4:	4b04      	ldr	r3, [pc, #16]	; (11cc08 <PendSV_Handler+0x3c>)
+  11cbf6:	220d      	movs	r2, #13
+  11cbf8:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:364
+    uart_putchar('\n');
+  11cbfa:	4b03      	ldr	r3, [pc, #12]	; (11cc08 <PendSV_Handler+0x3c>)
+  11cbfc:	220a      	movs	r2, #10
+  11cbfe:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:365
+}
+  11cc00:	bf00      	nop
+  11cc02:	46bd      	mov	sp, r7
+  11cc04:	bc80      	pop	{r7}
+  11cc06:	4770      	bx	lr
+  11cc08:	4000c000 	.word	0x4000c000
+
+0011cc0c <SysTick_Handler>:
+SysTick_Handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:366
+void SysTick_Handler(void) {
+  11cc0c:	b480      	push	{r7}
+  11cc0e:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:367
+    uart_putchar('T');
+  11cc10:	4b0a      	ldr	r3, [pc, #40]	; (11cc3c <SysTick_Handler+0x30>)
+  11cc12:	2254      	movs	r2, #84	; 0x54
+  11cc14:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:368
+    uart_putchar('i');
+  11cc16:	4b09      	ldr	r3, [pc, #36]	; (11cc3c <SysTick_Handler+0x30>)
+  11cc18:	2269      	movs	r2, #105	; 0x69
+  11cc1a:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:369
+    uart_putchar('c');
+  11cc1c:	4b07      	ldr	r3, [pc, #28]	; (11cc3c <SysTick_Handler+0x30>)
+  11cc1e:	2263      	movs	r2, #99	; 0x63
+  11cc20:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:370
+    uart_putchar('k');
+  11cc22:	4b06      	ldr	r3, [pc, #24]	; (11cc3c <SysTick_Handler+0x30>)
+  11cc24:	226b      	movs	r2, #107	; 0x6b
+  11cc26:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:371
+    uart_putchar('\r');
+  11cc28:	4b04      	ldr	r3, [pc, #16]	; (11cc3c <SysTick_Handler+0x30>)
+  11cc2a:	220d      	movs	r2, #13
+  11cc2c:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:372
+    uart_putchar('\n');
+  11cc2e:	4b03      	ldr	r3, [pc, #12]	; (11cc3c <SysTick_Handler+0x30>)
+  11cc30:	220a      	movs	r2, #10
+  11cc32:	631a      	str	r2, [r3, #48]	; 0x30
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96\GCC/startup_HM3S9B96_IT.c:373
+}
+  11cc34:	bf00      	nop
+  11cc36:	46bd      	mov	sp, r7
+  11cc38:	bc80      	pop	{r7}
+  11cc3a:	4770      	bx	lr
+  11cc3c:	4000c000 	.word	0x4000c000
+
+0011cc40 <__enable_irq>:
+__enable_irq():
+d:\mcu_workspace\integrationtest\mcu4in_it\function_cpus\core\cmsis/core_cm3.h:1204
+
+
+#elif (defined (__GNUC__)) /*------------------ GNU Compiler ---------------------*/
+/* GNU gcc specific functions */
+
+static __INLINE void __enable_irq()               { __ASM volatile ("cpsie i"); }
+  11cc40:	b480      	push	{r7}
+  11cc42:	af00      	add	r7, sp, #0
+  11cc44:	b662      	cpsie	i
+  11cc46:	bf00      	nop
+  11cc48:	46bd      	mov	sp, r7
+  11cc4a:	bc80      	pop	{r7}
+  11cc4c:	4770      	bx	lr
+
+0011cc4e <SystemCoreClockUpdate>:
+SystemCoreClockUpdate():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96/system_HM3S9B96_hc.c:207
+ */
+/*----------------------------------------------------------------------------
+  Clock functions
+ *----------------------------------------------------------------------------*/
+void SystemCoreClockUpdate (void)            /* Get Core Clock Frequency      */
+{
+  11cc4e:	b480      	push	{r7}
+  11cc50:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96/system_HM3S9B96_hc.c:298
+	  		USBClock = (IRC_OSC * ((HM_SC->PLL0STAT & 0x1F) + 1));
+  }
+  else
+	  USBClock = 0; /* this should never happen! */
+	#endif
+}
+  11cc52:	bf00      	nop
+  11cc54:	46bd      	mov	sp, r7
+  11cc56:	bc80      	pop	{r7}
+  11cc58:	4770      	bx	lr
+
+0011cc5a <SystemInit>:
+SystemInit():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96/system_HM3S9B96_hc.c:313
+ * @brief  Setup the microcontroller system.
+ *         Initialize the System.
+ */
+ 
+void SystemInit (void)
+{
+  11cc5a:	b580      	push	{r7, lr}
+  11cc5c:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96/system_HM3S9B96_hc.c:316
+// #if defined(BOOT_MODE) 
+#ifdef BOOTMODE
+	__enable_irq();
+  11cc5e:	f7ff ffef 	bl	11cc40 <__enable_irq>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96/system_HM3S9B96_hc.c:317
+	return;
+  11cc62:	bf00      	nop
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\Core\Device\HCM\Source\HM3S9B96/system_HM3S9B96_hc.c:333
+
+	//__disable_irq();
+	// __enable_irq();
+    extern void Resource_Init(void);
+	Resource_Init();
+}
+  11cc64:	bd80      	pop	{r7, pc}
+
+0011cc66 <__disable_irq>:
+__disable_irq():
+d:\mcu_workspace\integrationtest\mcu4in_it\function_cpus\core\cmsis/core_cm3.h:1205
+static __INLINE void __disable_irq()              { __ASM volatile ("cpsid i"); }
+  11cc66:	b480      	push	{r7}
+  11cc68:	af00      	add	r7, sp, #0
+  11cc6a:	b672      	cpsid	i
+  11cc6c:	bf00      	nop
+  11cc6e:	46bd      	mov	sp, r7
+  11cc70:	bc80      	pop	{r7}
+  11cc72:	4770      	bx	lr
+
+0011cc74 <Jump_App>:
+Jump_App():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:27
+ * @param		None
+ * @return 		None
+ ***********************************************************************/
+#if defined(__GNUC__)
+void Jump_App( unsigned int address )
+{
+  11cc74:	b480      	push	{r7}
+  11cc76:	b083      	sub	sp, #12
+  11cc78:	af00      	add	r7, sp, #0
+  11cc7a:	6078      	str	r0, [r7, #4]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:31
+	// FIXME -O0 close GCC optimizations
+	// __IO uint32_t tmp = address; // Force GCC compiler use R0
+	// asd volatile ("mov r0, 0");
+	asm volatile ("ldr sp,[r0]");	//Load new stack pointer address								
+  11cc7c:	f8d0 d000 	ldr.w	sp, [r0]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:32
+	asm volatile ("ldr pc,[r0,#4]");	//Load new program counter address
+  11cc80:	f8d0 f004 	ldr.w	pc, [r0, #4]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:33
+}
+  11cc84:	bf00      	nop
+  11cc86:	370c      	adds	r7, #12
+  11cc88:	46bd      	mov	sp, r7
+  11cc8a:	bc80      	pop	{r7}
+  11cc8c:	4770      	bx	lr
+
+0011cc8e <save_context_handler>:
+save_context_handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:39
+#else
+extern void Jump_App( unsigned int address );
+extern void MSR_MSP( unsigned int address );
+#endif
+
+void save_context_handler(){}
+  11cc8e:	b480      	push	{r7}
+  11cc90:	af00      	add	r7, sp, #0
+  11cc92:	bf00      	nop
+  11cc94:	46bd      	mov	sp, r7
+  11cc96:	bc80      	pop	{r7}
+  11cc98:	4770      	bx	lr
+
+0011cc9a <plic_handler>:
+plic_handler():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:40
+uint32_t plic_handler(){return 1;}
+  11cc9a:	b480      	push	{r7}
+  11cc9c:	af00      	add	r7, sp, #0
+  11cc9e:	2301      	movs	r3, #1
+  11cca0:	4618      	mov	r0, r3
+  11cca2:	46bd      	mov	sp, r7
+  11cca4:	bc80      	pop	{r7}
+  11cca6:	4770      	bx	lr
+
+0011cca8 <main>:
+main():
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:43
+
+int main (void)
+{
+  11cca8:	b580      	push	{r7, lr}
+  11ccaa:	b082      	sub	sp, #8
+  11ccac:	af00      	add	r7, sp, #0
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:44
+	uint32_t reg_val=0;
+  11ccae:	2300      	movs	r3, #0
+  11ccb0:	607b      	str	r3, [r7, #4]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:45
+	SCB->VTOR =  FUNCBOOT_START & 0x1FFFFF80;
+  11ccb2:	4b05      	ldr	r3, [pc, #20]	; (11ccc8 <main+0x20>)
+  11ccb4:	4a05      	ldr	r2, [pc, #20]	; (11cccc <main+0x24>)
+  11ccb6:	609a      	str	r2, [r3, #8]
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:46
+	__disable_irq();
+  11ccb8:	f7ff ffd5 	bl	11cc66 <__disable_irq>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:48
+	
+	Jump_App(USER_CODERAM_START);
+  11ccbc:	f44f 1080 	mov.w	r0, #1048576	; 0x100000
+  11ccc0:	f7ff ffd8 	bl	11cc74 <Jump_App>
+D:\MCU_WorkSpace\IntegrationTest\mcu4in_IT\function_cpus\ARM\funcboot/funcboot.c:50 (discriminator 1)
+
+	while(1);
+  11ccc4:	e7fe      	b.n	11ccc4 <main+0x1c>
+  11ccc6:	bf00      	nop
+  11ccc8:	e000ed00 	.word	0xe000ed00
+  11cccc:	0011c800 	.word	0x0011c800
